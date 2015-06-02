@@ -85,3 +85,5 @@ hi link jsReturn jsFunction
 hi link jsFuncCall jsFuncName
 
 hi VertSplit guifg=Black guibg=White
+hi TabLine guibg=#111111 guifg=#585858 gui=NONE cterm=NONE term=NONE
+hi TabLineFill guifg=#111111
