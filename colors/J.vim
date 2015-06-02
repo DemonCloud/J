@@ -67,13 +67,22 @@ hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NO
 hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi jsFuncName guifg=#6C9E63 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi jsAssignExpIdent guifg=#719CE0 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE 
+hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
+hi jsRegexpString guifg=#C83E8D
 hi link jsStorageClass jsFunction 
+hi link jsNull jsFunction
 hi link jsThis jsFunction
 hi link jsReturn jsFunction
+hi link jsRepeat jsFunction
 hi link jsFuncCall jsFuncName
 hi link jsPrototype jsFunction
 hi link jsConditional jsFunction
+hi link jsBooleanFalse jsFunction
+hi link jsBooleanTrue jsFunction
+hi jsObjectKey guifg=#9E4779
+hi link jsFunctionKey jsObjectKey 
+
+hi jsOperator guifg=White gui=NONE
 
 hi VertSplit guifg=Black guibg=White
 hi TabLine guibg=#111111 guifg=#585858 gui=NONE cterm=NONE term=NONE
