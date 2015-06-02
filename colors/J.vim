@@ -16,8 +16,8 @@ let g:colors_name = "J"
 
 hi Normal guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Cursor guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=NONE term=NONE
-hi CursorLine guifg=LightGray ctermfg=252 guibg=#181818 ctermbg=234 gui=NONE cterm=NONE term=NONE
-hi CursorLineNr guifg=Red ctermfg=15 guibg=#181818 ctermbg=16 gui=bold cterm=bold term=bold
+hi CursorLine guifg=LightGray ctermfg=252 guibg=#080808 ctermbg=234 gui=NONE cterm=NONE term=NONE
+hi CursorLineNr guifg=Red ctermfg=15 guibg=#080808 ctermbg=16 gui=bold cterm=bold term=bold
 hi FoldColumn guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Folded guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi LineNr guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
@@ -65,20 +65,21 @@ hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE
 hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 
 hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi jsFuncName guifg=#6C9E63 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
+hi jsFuncName guifg=#6C9E63 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
 hi jsRegexpString guifg=#C83E8D
-hi link jsStorageClass jsFunction 
-hi link jsNull jsFunction
-hi link jsThis jsFunction
-hi link jsReturn jsFunction
-hi link jsRepeat jsFunction
-hi link jsFuncCall jsFuncName
-hi link jsPrototype jsFunction
-hi link jsConditional jsFunction
-hi link jsBooleanFalse jsFunction
-hi link jsBooleanTrue jsFunction
+
+hi link jsStorageClass	 jsFunction 
+hi link jsNull			 jsFunction
+hi link jsThis			 jsFunction
+hi link jsReturn		 jsFunction
+hi link jsRepeat		 jsFunction
+hi link jsFuncCall		 jsFuncName
+hi link jsPrototype		 jsFunction
+hi link jsConditional	 jsFunction
+hi link jsBooleanFalse	 jsFunction
+hi link jsBooleanTrue	 jsFunction
 hi jsObjectKey guifg=#9E4779
 hi link jsFunctionKey jsObjectKey 
 
