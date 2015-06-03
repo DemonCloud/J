@@ -34,7 +34,7 @@ hi MatchParen guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=
 hi pythonEscape guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi javaScriptFunction guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi elixirDelimiter guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Search guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
+hi Search guifg=White ctermfg=15 guibg=#990000 ctermbg=67 gui=underline cterm=underline term=underline
 hi Visual guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
 hi NonText guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Directory guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
@@ -89,15 +89,17 @@ hi htmlLink guifg=#41A0AD guibg=Black gui=underline cterm=underline term=underli
 " CSS Syntax
 hi cssTagName guifg=#DB4000 ctermfg=15 guibg=black ctermbg=16 gui=underline cterm=underline term=underline
 hi cssClassName guifg=#DA4158 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi cssIdentifier guifg=#DC1111 ctermfg=15 guibg=black ctermbg=16 gui=bold cterm=bold term=bold
+hi cssIdentifier guifg=#DC1111 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
+
 hi link cssClassNameDot cssClassName 
+hi link cssPseudoClassId cssIdentifier
 
 hi cssBoxProp guifg=#855EB6 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi cssIEUIProp guifg=#881820 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi cssUnitDecorators guifg=#C0C280 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi cssError guifg=#970000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 
-hi link cssImportant cssError
+hi link cssImportant cssTagName 
 
 hi link cssUIProp cssBoxProp
 hi link cssDefinition cssBoxProp
@@ -124,7 +126,7 @@ hi link cssTransitionProp cssTagName
 
 " JavaScript Syntax
 hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi jsFuncName guifg=#6C9E63 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi jsFuncName guifg=#FF6600 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
 hi link jsClass jsAssignExpIdent
