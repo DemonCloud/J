@@ -86,6 +86,37 @@ hi link htmlH6 htmlH1
 
 hi htmlLink guifg=#41A0AD guibg=Black gui=underline cterm=underline term=underline
 
+" CSS Syntax
+hi cssTagName guifg=#DB4000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi cssBoxProp guifg=#855EB6 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi cssIEUIProp guifg=#881820 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi cssUnitDecorators guifg=#C0C280 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi cssError guifg=#970000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+
+hi link cssImportant cssError
+
+hi link cssUIProp cssBoxProp
+hi link cssDefinition cssBoxProp
+hi link cssFontProp cssBoxProp
+hi link cssTextProp cssBoxProp
+hi link cssListProp cssBoxProp
+hi link cssColorProp cssBoxProp
+hi link cssPositioningProp cssBoxProp
+hi link cssPageProp cssBoxProp
+hi link cssBorderProp cssBoxProp
+hi link cssBackgroundProp cssBoxProp
+hi link cssTableProp cssBoxProp
+hi link cssAttrRegion cssError 
+hi link cssFontDescriptorProp cssBoxProp
+hi link cssArualProp cssBoxProp
+hi link cssCeneratedContentProp cssBoxProp
+hi link cssDimensionProp cssBoxProp
+hi link cssMultiColumnProp cssBoxProp
+
+hi link cssAnimationProp cssTagName
+hi link cssTranformProp cssTagName
+hi link cssTransitionProp cssTagName
+
 
 " JavaScript Syntax
 hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
@@ -121,5 +152,6 @@ hi link cNumbers cNumber
 hi link cString String
 hi link cSpecial String
 hi cFormat guifg=#DB4300
+
 
 
