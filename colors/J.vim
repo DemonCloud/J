@@ -88,6 +88,7 @@ hi link htmlH5 htmlH1
 hi link htmlH6 htmlH1
 
 hi htmlLink guifg=#41A0AD guibg=Black gui=underline cterm=underline term=underline
+hi htmlSpecialChar guifg=#114180 guibg=Black gui=NONE cterm=NONE term=NONE  
 
 " CSS Syntax
 hi cssTagName guifg=#DB4000 ctermfg=15 guibg=black ctermbg=16 gui=underline cterm=underline term=underline
@@ -121,6 +122,7 @@ hi link cssArualProp cssBoxProp
 hi link cssCeneratedContentProp cssBoxProp
 hi link cssDimensionProp cssBoxProp
 hi link cssMultiColumnProp cssBoxProp
+hi link cssGeneratedContentProp cssBoxProp
 
 hi link cssAnimationProp cssTagName
 hi link cssTranformProp cssTagName
@@ -160,16 +162,18 @@ hi jsonKeyword guifg=#9E0090 gui=underline
 
 
 " C Syntax
-hi cInclude guifg=#990000 gui=bold
+hi cInclude guifg=#980919 
 hi cIncluded guifg=#879000 
+hi cDefine guifg=#C91E58
+hi cNumber guifg=#668CB6
+hi cFormat guifg=#DB4300
+
 hi link cType cInclude 
 hi link cRepeat cInclude
 hi link cStructure cInclude
-hi cNumber guifg=#668CB6
 hi link cNumbers cNumber
 hi link cString String
 hi link cSpecial String
-hi cFormat guifg=#DB4300
 
 
 
