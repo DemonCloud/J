@@ -34,7 +34,7 @@ hi MatchParen guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=
 hi pythonEscape guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi javaScriptFunction guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi elixirDelimiter guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Search guifg=White ctermfg=15 guibg=#990000 ctermbg=67 gui=underline cterm=underline term=underline
+hi Search guifg=#990000 ctermfg=15 guibg=White ctermbg=67 gui=underline cterm=underline term=underline
 hi Visual guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
 hi NonText guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Directory guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
@@ -68,6 +68,8 @@ hi vimCommand guifg=Red ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold te
 hi vimIsCommand guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+
+hi qfFileName guifg=#990000 gui=NONE
 
 " HTML Syntax
 hi htmlTag guifg=#DF642F guibg=Black gui=NONE cterm=NONE term=NONE
@@ -144,8 +146,10 @@ hi link jsConditional jsFunction
 hi link jsBooleanFalse jsFunction
 hi link jsBooleanTrue  jsFunction
 hi jsObjectKey guifg=#9E4779
-hi link jsFunctionKey jsObjectKey 
+hi jsGlobalObjects guifg=#9E0090 gui=bold,underline
 hi jsOperator guifg=White gui=NONE
+
+hi link jsFunctionKey jsObjectKey 
 
 " C Syntax
 hi cInclude guifg=#990000 gui=bold
