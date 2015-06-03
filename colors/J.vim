@@ -150,7 +150,14 @@ hi jsObjectKey guifg=#9E4779
 hi jsGlobalObjects guifg=#9E0090 gui=bold,underline
 hi jsOperator guifg=White gui=NONE
 
+hi link jsFuncAssignObjChain jsObjectKey
+hi link jsFuncAssignIdent	jsFuncName
+
 hi link jsFunctionKey jsObjectKey 
+
+"JSON Syntax
+hi jsonKeyword guifg=#9E0090 gui=underline
+
 
 " C Syntax
 hi cInclude guifg=#990000 gui=bold
