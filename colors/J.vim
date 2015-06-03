@@ -75,6 +75,16 @@ hi link htmlEndTag htmlTag
 hi link htmlTagN htmlTag
 hi link htmlTagName htmlTag
 hi link htmlSpecialTagName htmlTag
+hi htmlArg guifg=#A9A9A9 guibg=Black gui=NONE cterm=NONE term=NONE
+hi htmlTitle guifg=Red guibg=Black gui=NONE cterm=NONE term=NONE
+hi htmlH1 guifg=#F0F0F0 guibg=Black gui=underline cterm=underline term=underline
+hi link htmlH2 htmlH1
+hi link htmlH3 htmlH1
+hi link htmlH4 htmlH1
+hi link htmlH5 htmlH1
+hi link htmlH6 htmlH1
+
+hi htmlLink guifg=#41A0AD guibg=Black gui=underline cterm=underline term=underline
 
 
 " JavaScript Syntax
@@ -82,18 +92,20 @@ hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bol
 hi jsFuncName guifg=#6C9E63 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
+hi link jsClass jsAssignExpIdent
 hi jsRegexpString guifg=#C83E8D
+hi javascriptunderscore guifg=#990000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 
-hi link jsStorageClass	 jsFunction 
-hi link jsNull			 jsFunction
-hi link jsThis			 jsFunction
-hi link jsReturn		 jsFunction
-hi link jsRepeat		 jsFunction
-hi link jsFuncCall		 jsFuncName
-hi link jsPrototype		 jsFunction
-hi link jsConditional	 jsFunction
-hi link jsBooleanFalse	 jsFunction
-hi link jsBooleanTrue	 jsFunction
+hi link jsStorageClass jsFunction
+hi link jsNull jsFunction
+hi link jsThis jsFunction
+hi link jsReturn jsFunction
+hi link jsRepeat jsFunction
+hi link jsFuncCall jsFuncName
+hi link jsPrototype jsFunction
+hi link jsConditional jsFunction
+hi link jsBooleanFalse jsFunction
+hi link jsBooleanTrue  jsFunction
 hi jsObjectKey guifg=#9E4779
 hi link jsFunctionKey jsObjectKey 
 hi jsOperator guifg=White gui=NONE
