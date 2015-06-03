@@ -87,7 +87,11 @@ hi link htmlH6 htmlH1
 hi htmlLink guifg=#41A0AD guibg=Black gui=underline cterm=underline term=underline
 
 " CSS Syntax
-hi cssTagName guifg=#DB4000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi cssTagName guifg=#DB4000 ctermfg=15 guibg=black ctermbg=16 gui=underline cterm=underline term=underline
+hi cssClassName guifg=#DA4158 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi cssIdentifier guifg=#DC1111 ctermfg=15 guibg=black ctermbg=16 gui=bold cterm=bold term=bold
+hi link cssClassNameDot cssClassName 
+
 hi cssBoxProp guifg=#855EB6 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi cssIEUIProp guifg=#881820 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi cssUnitDecorators guifg=#C0C280 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
