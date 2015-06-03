@@ -69,6 +69,14 @@ hi vimIsCommand guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bol
 hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 
+" HTML Syntax
+hi htmlTag guifg=#DF642F guibg=Black gui=NONE cterm=NONE term=NONE
+hi link htmlEndTag htmlTag
+hi link htmlTagN htmlTag
+hi link htmlTagName htmlTag
+hi link htmlSpecialTagName htmlTag
+
+
 " JavaScript Syntax
 hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi jsFuncName guifg=#6C9E63 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
