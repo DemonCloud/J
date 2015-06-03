@@ -47,6 +47,11 @@ hi Pmenu guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE ter
 hi PmenuSel guifg=#778899 ctermfg=67 guibg=White ctermbg=15 gui=NONE cterm=NONE term=NONE
 hi helpSpecial guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
+
+
+hi VertSplit guifg=Black guibg=White
+hi TabLine guibg=#111111 guifg=#585858 gui=NONE cterm=NONE term=NONE
+hi TabLineFill guifg=#111111
 hi helpNote guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimOption guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimGroup guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
@@ -64,6 +69,7 @@ hi vimIsCommand guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bol
 hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 
+" JavaScript Syntax
 hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi jsFuncName guifg=#6C9E63 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
@@ -82,9 +88,17 @@ hi link jsBooleanFalse	 jsFunction
 hi link jsBooleanTrue	 jsFunction
 hi jsObjectKey guifg=#9E4779
 hi link jsFunctionKey jsObjectKey 
-
 hi jsOperator guifg=White gui=NONE
 
-hi VertSplit guifg=Black guibg=White
-hi TabLine guibg=#111111 guifg=#585858 gui=NONE cterm=NONE term=NONE
-hi TabLineFill guifg=#111111
+" C Syntax
+hi cInclude guifg=#880810 gui=bold
+hi cIncluded guifg=#879000 
+hi link cType cInclude 
+hi link cRepeat cInclude
+hi cNumber guifg=#668CB6
+hi link cNumbers cNumber
+hi link cString String
+hi link cSpecial String
+hi cFormat guifg=#DB4300
+
+
