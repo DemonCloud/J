@@ -127,7 +127,7 @@ hi link cssTransitionProp cssTagName
 
 
 " JavaScript Syntax
-hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
+hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi jsFuncName guifg=#FF6600 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
