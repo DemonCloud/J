@@ -91,10 +91,11 @@ hi link jsFunctionKey jsObjectKey
 hi jsOperator guifg=White gui=NONE
 
 " C Syntax
-hi cInclude guifg=#880810 gui=bold
+hi cInclude guifg=#990000 gui=bold
 hi cIncluded guifg=#879000 
 hi link cType cInclude 
 hi link cRepeat cInclude
+hi link cStructure cInclude
 hi cNumber guifg=#668CB6
 hi link cNumbers cNumber
 hi link cString String
