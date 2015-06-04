@@ -123,6 +123,11 @@ hi link cssCeneratedContentProp cssBoxProp
 hi link cssDimensionProp cssBoxProp
 hi link cssMultiColumnProp cssBoxProp
 hi link cssGeneratedContentProp cssBoxProp
+hi link cssFlexibleBoxProp cssBoxProp
+
+" for IE CSS Hack
+hi link cssUnicodeEscape Comment 
+hi link cssHack Comment
 
 hi link cssAnimationProp cssTagName
 hi link cssTranformProp cssTagName
