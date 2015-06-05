@@ -49,6 +49,9 @@ hi helpSpecial guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm
 hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 
 
+
+
+" ------ Language Syntax ------
 hi VertSplit guifg=Black guibg=White
 hi TabLine guibg=#111111 guifg=#585858 gui=NONE cterm=NONE term=NONE
 hi TabLineFill guifg=#111111
@@ -64,7 +67,7 @@ hi vimHiCTerm guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=
 hi vimHiCTermFgBg guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimSynType guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimCommentTitle guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimCommand guifg=Red ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
+hi vimCommand guifg=Red ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimIsCommand guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
@@ -139,6 +142,8 @@ hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NON
 hi jsFuncName guifg=#FF6600 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
+hi jsNumber guifg=#668CB6 guibg=Black
+
 hi link jsClass jsAssignExpIdent
 hi jsRegexpString guifg=#C83E8D
 hi javascriptunderscore guifg=#990000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
@@ -154,13 +159,15 @@ hi link jsConditional jsFunction
 hi link jsBooleanFalse jsFunction
 hi link jsBooleanTrue  jsFunction
 hi jsObjectKey guifg=#9E4779
-hi jsGlobalObjects guifg=#9E0090 gui=bold,underline
+hi jsGlobalObjects guifg=#9E0090 gui=underline
 hi jsOperator guifg=White gui=NONE
 
+hi link jsRegexpCharClass String 
 hi link jsFuncAssignObjChain jsObjectKey
 hi link jsFuncAssignIdent	jsFuncName
-
 hi link jsFunctionKey jsObjectKey 
+hi link jsRegexpQuantifier jsAssignExpIdent
+hi link jsRegexpOr jsAssignExpIdent
 
 "JSON Syntax
 hi jsonKeyword guifg=#9E0090 gui=underline
@@ -181,4 +188,11 @@ hi link cString String
 hi link cSpecial String
 
 
+
+"------ Vim Plugin Syntax ------
+
+" Tagbar Plugin
+" url:https://github.com/majutsushi/tagbar
+hi TagbarScope guifg=#DB4300 guibg=Black
+hi TagbarType guifg=#C91E58 guibg=Black
 
