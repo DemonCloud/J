@@ -23,7 +23,7 @@ hi Folded guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE
 hi LineNr guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Statement guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi PreProc guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi String guifg=#61E046 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi String guifg=#79BE62 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Comment guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Constant guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Type guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
@@ -197,7 +197,7 @@ hi TagbarScope guifg=#DB4300 guibg=Black
 hi TagbarType guifg=#C91E58 guibg=Black
 
 " NerdTree Plugin
-
+" https://github.com/scrooloose/nerdtree
 hi NerdTreeOpenable guifg=#DB4300 gui=bold
 hi NerdTreeCWD guifg=#990902
 hi NerdTreeDir guifg=#873800
@@ -205,3 +205,16 @@ hi NerdTreeFile guifg=#f8f8f8
 
 hi link NerdTreeUp NerdTreeDir 
 hi NerdTreeHelpTitle guifg=#990000 gui=bold,underline
+
+" Gundo Plugin
+" https://github.com/sjl/gundo.vim
+hi GundoCurrentLocation guifg=#DB4300 gui=bold
+hi GundoNumber guifg=#668CB6
+hi GundoNumberField guifg=#DB4300 
+" Gundo diff file
+hi diffNewFile guifg=#79BE62
+hi diffFile guifg=#79BE62
+hi link diffLine GundoCurrentLocation
+hi diffRemoved guifg=#990000 guibg=Black
+hi diffAdded guifg=#79BE62 guibg=Black
+
