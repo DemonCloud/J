@@ -99,7 +99,7 @@ hi htmlSpecialChar guifg=#114180 guibg=Black gui=NONE cterm=NONE term=NONE
 
 " CSS Syntax
 hi cssTagName guifg=#DB4000 ctermfg=15 guibg=black ctermbg=16 gui=underline cterm=underline term=underline
-hi cssClassName guifg=#DA4158 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi cssClassName guifg=#C1C292 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi cssIdentifier guifg=#DC1111 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
 
 hi link cssClassNameDot cssClassName 
