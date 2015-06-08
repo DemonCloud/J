@@ -56,9 +56,11 @@ hi StatusLine guibg=Black guifg=#C0C280 ctermfg=15 ctermbg=16 gui=underline cter
 
 " ------ Language Syntax ------
 hi VertSplit guifg=Black guibg=White
-hi TabLine guibg=#111111 guifg=#585858 gui=NONE cterm=NONE term=NONE
-hi TabLineFill guifg=#111111
+hi TabLine guibg=#060606 guifg=#666666 gui=underline cterm=underline term=underline
+hi TabLineFill guibg=#060606 guifg=#C0C280 gui=underline cterm=underline term=underline
+hi TabLineSel guibg=#000000 guifg=#C0C280 gui=underline cterm=underline term=underline
 hi helpNote guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+
 hi vimOption guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimGroup guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimHiClear guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
