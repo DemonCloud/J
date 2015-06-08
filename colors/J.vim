@@ -20,7 +20,7 @@ let g:colors_name = "J"
 hi Normal guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Cursor guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=NONE term=NONE
 hi CursorLine guifg=LightGray ctermfg=252 guibg=#080808 ctermbg=234 gui=NONE cterm=NONE term=NONE
-hi CursorLineNr guifg=#C0C280 ctermfg=15 guibg=#080808 ctermbg=16 gui=bold cterm=bold term=bold
+hi CursorLineNr guifg=#990808 ctermfg=15 guibg=#080808 ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi FoldColumn guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Folded guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi LineNr guifg=#FFFFFF ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
