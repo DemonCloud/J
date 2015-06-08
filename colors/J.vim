@@ -51,6 +51,7 @@ hi PmenuSel guifg=#778899 ctermfg=67 guibg=White ctermbg=15 gui=NONE cterm=NONE 
 hi helpSpecial guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 
+hi StatusLine guibg=Black guifg=White ctermfg=15 ctermbg=16 gui=underline cterm=underline term=underline 
 
 
 " ------ Language Syntax ------
@@ -75,8 +76,6 @@ hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE
 hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimAutoEvent guifg=#DB4300 
 
-hi qfFileName guifg=#990000 guibg=Black gui=NONE
-hi link MRUFileName qfFileName
 
 " HTML Syntax
 hi htmlTag guifg=#DF642F guibg=Black gui=NONE cterm=NONE term=NONE
@@ -230,3 +229,6 @@ hi uniteSource_File guifg=#F0F0F0 guibg=Black
 hi uniteCandidateIcon guifg=#79BE62
 hi uniteSource_DirectoryNew guifg=#DB4300
 
+" MRU Plugin
+hi qfFileName guifg=#990000 guibg=Black gui=NONE
+hi link MRUFileName qfFileName
