@@ -53,7 +53,6 @@ hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underli
 
 
 
-
 " ------ Language Syntax ------
 hi VertSplit guifg=Black guibg=White
 hi TabLine guibg=#111111 guifg=#585858 gui=NONE cterm=NONE term=NONE
@@ -113,6 +112,7 @@ hi cssError guifg=#970000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE 
 hi link cssImportant cssTagName 
 
 hi link cssUIProp cssBoxProp
+hi link cssAuralProp cssBoxProp
 hi link cssDefinition cssBoxProp
 hi link cssFontProp cssBoxProp
 hi link cssTextProp cssBoxProp
@@ -176,8 +176,9 @@ hi link jsFunctionKey jsObjectKey
 hi link jsRegexpQuantifier jsAssignExpIdent
 hi link jsRegexpOr jsAssignExpIdent
 
-"JSON Syntax
-hi jsonKeyword guifg=#9E0090 gui=underline
+" JSON Syntax
+hi jsonKeyword guifg=#DAA68F gui=underline
+hi jsonBrace guifg=#DB4610 gui=NONE
 
 
 " C Syntax
