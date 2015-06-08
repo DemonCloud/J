@@ -20,10 +20,10 @@ let g:colors_name = "J"
 hi Normal guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Cursor guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=NONE term=NONE
 hi CursorLine guifg=LightGray ctermfg=252 guibg=#080808 ctermbg=234 gui=NONE cterm=NONE term=NONE
-hi CursorLineNr guifg=Red ctermfg=15 guibg=#080808 ctermbg=16 gui=bold cterm=bold term=bold
+hi CursorLineNr guifg=#C0C280 ctermfg=15 guibg=#080808 ctermbg=16 gui=bold cterm=bold term=bold
 hi FoldColumn guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Folded guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi LineNr guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi LineNr guifg=#FFFFFF ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Statement guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi PreProc guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
 hi String guifg=#79BE62 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
@@ -51,7 +51,7 @@ hi PmenuSel guifg=#778899 ctermfg=67 guibg=White ctermbg=15 gui=NONE cterm=NONE 
 hi helpSpecial guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 
-hi StatusLine guibg=Black guifg=White ctermfg=15 ctermbg=16 gui=underline cterm=underline term=underline 
+hi StatusLine guibg=Black guifg=#C0C280 ctermfg=15 ctermbg=16 gui=underline cterm=underline term=underline 
 
 
 " ------ Language Syntax ------
