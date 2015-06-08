@@ -196,3 +196,12 @@ hi link cSpecial String
 hi TagbarScope guifg=#DB4300 guibg=Black
 hi TagbarType guifg=#C91E58 guibg=Black
 
+" NerdTree Plugin
+
+hi NerdTreeOpenable guifg=#DB4300 gui=bold
+hi NerdTreeCWD guifg=#990902
+hi NerdTreeDir guifg=#873800
+hi NerdTreeFile guifg=#f8f8f8
+
+hi link NerdTreeUp NerdTreeDir 
+hi NerdTreeHelpTitle guifg=#990000 gui=bold,underline
