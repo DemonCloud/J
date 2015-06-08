@@ -3,6 +3,8 @@
 " Name:       J.vim
 " Maintainer: YIJUN 
 " License:    MIT
+" 
+" This Vim checme will rebuild in 2015 10 28
 
 highlight clear
 
@@ -14,6 +16,7 @@ set background = "dark"
 
 let g:colors_name = "J"
 
+" Vim Normal 
 hi Normal guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi Cursor guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=NONE term=NONE
 hi CursorLine guifg=LightGray ctermfg=252 guibg=#080808 ctermbg=234 gui=NONE cterm=NONE term=NONE
@@ -71,6 +74,7 @@ hi vimCommand guifg=Red ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE te
 hi vimIsCommand guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi vimAutoEvent guifg=#DB4300 
 
 hi qfFileName guifg=#990000 guibg=Black gui=NONE
 hi link MRUFileName qfFileName
@@ -144,6 +148,7 @@ hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cter
 hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
 hi jsNumber guifg=#668CB6 guibg=Black
 
+
 hi link jsClass jsAssignExpIdent
 hi jsRegexpString guifg=#C83E8D
 hi javascriptunderscore guifg=#990000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
@@ -151,6 +156,8 @@ hi javascriptunderscore guifg=#990000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE
 hi link jsStorageClass jsFunction
 hi link jsNull jsFunction
 hi link jsThis jsFunction
+hi link jsLabel jsFunction
+hi link jsStatement jsFunction
 hi link jsReturn jsFunction
 hi link jsRepeat jsFunction
 hi link jsFuncCall jsFuncName
@@ -187,12 +194,10 @@ hi link cNumbers cNumber
 hi link cString String
 hi link cSpecial String
 
-
-
 "------ Vim Plugin Syntax ------
 
 " Tagbar Plugin
-" url:https://github.com/majutsushi/tagbar
+" https://github.com/majutsushi/tagbar
 hi TagbarScope guifg=#DB4300 guibg=Black
 hi TagbarType guifg=#C91E58 guibg=Black
 
@@ -200,7 +205,7 @@ hi TagbarType guifg=#C91E58 guibg=Black
 " https://github.com/scrooloose/nerdtree
 hi NerdTreeOpenable guifg=#DB4300 gui=bold
 hi NerdTreeCWD guifg=#990902
-hi NerdTreeDir guifg=#873800
+hi NerdTreeDir guifg=#DAA68F
 hi NerdTreeFile guifg=#f8f8f8
 
 hi link NerdTreeUp NerdTreeDir 
@@ -217,4 +222,10 @@ hi diffFile guifg=#79BE62
 hi link diffLine GundoCurrentLocation
 hi diffRemoved guifg=#990000 guibg=Black
 hi diffAdded guifg=#79BE62 guibg=Black
+
+" Unite Plugin
+hi uniteCandidateSourceName guifg=#DB4300 guibg=Black
+hi uniteSource_File guifg=#F0F0F0 guibg=Black 
+hi uniteCandidateIcon guifg=#79BE62
+hi uniteSource_DirectoryNew guifg=#DB4300
 
