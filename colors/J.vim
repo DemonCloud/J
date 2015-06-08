@@ -51,15 +51,16 @@ hi PmenuSel guifg=#778899 ctermfg=67 guibg=White ctermbg=15 gui=NONE cterm=NONE 
 hi helpSpecial guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
 
+" ------ Coustom ------
+hi VertSplit guifg=Black guibg=White
+hi TabLine guibg=#060606 guifg=#666666 gui=underline cterm=underline term=underline
+hi TabLineFill guibg=#060606 guifg=#C0C280 gui=underline cterm=underline term=underline
+hi TabLineSel guibg=#C0C280 guifg=#000000 gui=NONE cterm=NONE term=NONE
+hi helpNote guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi StatusLine guibg=Black guifg=#C0C280 ctermfg=15 ctermbg=16 gui=underline cterm=underline term=underline 
 
 
 " ------ Language Syntax ------
-hi VertSplit guifg=Black guibg=White
-hi TabLine guibg=#060606 guifg=#666666 gui=underline cterm=underline term=underline
-hi TabLineFill guibg=#060606 guifg=#C0C280 gui=underline cterm=underline term=underline
-hi TabLineSel guibg=#000000 guifg=#C0C280 gui=underline cterm=underline term=underline
-hi helpNote guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 
 hi vimOption guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimGroup guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
