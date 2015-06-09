@@ -126,7 +126,7 @@ call s:Link('htmlH5'             , 'htmlH1')
 call s:Link('htmlH6'             , 'htmlH1')
 
 " CSS Syntax
-call s:Set('cssTagName'        , '#DB43000' , 'Black' , '202' , '16' , 'underline')
+call s:Set('cssTagName'        , '#DB4300' , 'Black' , '202' , '16' , 'underline')
 call s:Set('cssClassName'      , '#C1C298'  , 'Black' , '229' , '16' , 'NONE')
 call s:Set('cssIdentifier'     , '#DC1111'  , 'Black' , '160' , '16' , 'NONE')
 call s:Set('cssBoxProp'        , '#855EB8'  , 'Black' , '127' , '16' , 'NONE')
