@@ -69,8 +69,8 @@ call s:Set('Directory'         , '#DB4301'   , 'Black'     , '208' , '16'  , 'NO
 call s:Set('Title'             , '#C0C290'   , 'Black'     , '230' , '16'  , 'bold')
 call s:Set('Todo'              , '#181818'   , '#C0C290'   , '232' , '230' , 'bold')
 
-call s:Set('Pmenu'             , '#C0C280'   , '#181818'   , '230' , '233' , 'NONE')
-call s:Set('PmenuSel'          , '#FFFFFF'   , 'Black'     , '255' , '16'  , 'underline')
+call s:Set('Pmenu'             , '#C0C280'   , '#080808'   , '230' , '233' , 'NONE')
+call s:Set('PmenuSel'          , '#F0F0F0'   , 'Black'     , '255' , '16'  , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
 call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'     , '230' , '16'  , 'underline')
@@ -106,11 +106,13 @@ call s:Link('vimNotation'    , 'vimMapLhs')
 call s:Link('vimAutoEvent'   , 'vimIsCommand')
 
 " HTML Syntax
-hi htmlTag guifg=#DF642F guibg=Black gui=NONE cterm=NONE term=NONE
-hi link htmlEndTag htmlTag
-hi link htmlTagN htmlTag
-hi link htmlTagName htmlTag
-hi link htmlSpecialTagName htmlTag
+call s:Set('htmlTag','#DF642F','Black','208','16','NONE')
+
+call s:Link('htmlEndTag', 'htmlTag')
+call s:Link('htmlTagN', 'htmlTag')
+call s:Link('htmlTagName', 'htmlTag')
+call s:Link('htmlSpecialTagName', 'htmlTag')
+
 hi htmlArg guifg=#A9A9A9 guibg=Black gui=NONE cterm=NONE term=NONE
 hi htmlTitle guifg=Red guibg=Black gui=NONE cterm=NONE term=NONE
 hi htmlH1 guifg=#F0F0F0 guibg=Black gui=underline cterm=underline term=underline
