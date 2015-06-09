@@ -4,7 +4,7 @@
 > ColorScheme for My JavaScript Programming
 
 #### Preview
-<img src="http://7j1zwt.com1.z0.glb.clouddn.com/jvim-vim.png" alt="J.vim">
+<img src="http://7j1zwt.com1.z0.glb.clouddn.com/jvim-vim2.png" alt="J.vim">
 
 #### JavaScript
 <img src="http://7j1zwt.com1.z0.glb.clouddn.com/jvim-js.png" alt="JavaScript preview">
