@@ -18,11 +18,11 @@ let g:colors_name = "J"
 
 " set Highlight
 function! s:Set(prop,gfg,gbg,tfg,tbg,stl)
-	let hstr='hi '.prop.' guifg='.gfg.' guibg='.gbg
+	let hstr='hi ' . a:prop . ' guifg=' . a:gfg . ' guibg=' . a:gbg
 
 	if strlen(a:tfg)
-		let hstr+=' ctermfg='.tfg.' ctermbg='.tbg
-		let hstr+=' gui='.stl.' cterm='.stl.' term='.stl
+		let hstr .=' ctermfg=' . a:tfg . ' ctermbg=' . a:tbg
+		let hstr .=' gui=' . a:stl . ' cterm=' . a:stl . ' term=' . a:stl
 	endif
 
 	execute hstr
@@ -30,7 +30,7 @@ endfunction
 
 " link emplament Scheme
 function! s:Link(prop,linker)
-	let lstr='hi link '.prop.' '.linker
+	let lstr='hi link '. a:prop . ' ' . a:linker
 	execute lstr
 endfunction
 
