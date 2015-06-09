@@ -16,40 +16,64 @@ set background = "dark"
 
 let g:colors_name = "J"
 
+" set Highlight
+function! s:Set(prop,gfg,gbg,tfg,tbg,stl)
+	let hstr='hi '.prop.' guifg='.gfg.' guibg='.gbg
+
+	if strlen(a:tfg)
+		let hstr+=' ctermfg='.tfg.' ctermbg='.tbg
+		let hstr+=' gui='.stl.' cterm='.stl.' term='.stl
+	endif
+
+	execute hstr
+endfunction
+
+" link emplament Scheme
+function! s:Link(prop,linker)
+	let lstr='hi link '.prop.' '.linker
+	execute lstr
+endfunction
+
 " Vim Normal 
-hi Normal guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Cursor guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=NONE term=NONE
-hi CursorLine guifg=LightGray ctermfg=252 guibg=#080808 ctermbg=234 gui=NONE cterm=NONE term=NONE
-hi CursorLineNr guifg=#990808 ctermfg=15 guibg=#080808 ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi FoldColumn guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Folded guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi LineNr guifg=#FFFFFF ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Statement guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi PreProc guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi String guifg=#79BE62 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Comment guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Constant guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Type guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi Function guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Identifier guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Special guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi MatchParen guifg=Black ctermfg=16 guibg=LightGray ctermbg=252 gui=NONE cterm=NONE term=NONE
-hi pythonEscape guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi javaScriptFunction guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi elixirDelimiter guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Search guifg=#f0f0f0 ctermfg=15 guibg=#990808 ctermbg=67 gui=bold cterm=bold term=bold
-hi Visual guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
-hi NonText guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Directory guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi Title guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi markdownHeadingDelimiter guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi markdownHeadingRule guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi markdownLinkText guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
-hi Todo guifg=Black ctermfg=16 guibg=Yellow ctermbg=226 gui=bold cterm=bold term=bold
-hi Pmenu guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
-hi PmenuSel guifg=#778899 ctermfg=67 guibg=White ctermbg=15 gui=NONE cterm=NONE term=NONE
-hi helpSpecial guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
+" Default Normal Global
+call s:Set('Normal','LightGray','Black','252','16','NONE')
+
+" Cursor
+call s:Set('Cursor'            , 'Black'     , '#FFFFFF'   , '16'  , '252' , 'NONE')
+call s:Set('CusorLine'         , '#FFFFFF'   , '#080808'   , '252' , '234' , 'NONE')
+call s:Set('CursorLineNr'      , '#990808'   , '#080808'   , '15'  , '16'  , 'NONE')
+
+call s:Set('FoldColumn'        , 'DarkGray'  , 'Black'     , '248' , '16'  , 'NONE')
+call s:Set('Folded'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
+
+call s:Set('LineNr'            , '#FFFFFF'   , 'Black'     , '248' , '16'  , 'NONE')
+call s:Set('Statement'         , '#FFFFFF'   , 'Black'     , '15'  , '16'  , 'bold')
+call s:Set('PreProc'           , '#FFFFFF'   , 'Black'     , '15'  , '16'  , 'bold')
+call s:Set('String'            , '#79BE62'   , 'Black'     , '82'  , '16'  , 'NONE')
+call s:Set('Comment'           , '#767676'   , 'Black'     , '243' , '16'  , 'NONE')
+
+call s:Set('Constant'          , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
+call s:Set('Type'              , '#C0C290'   , 'Black'     , '15'  , '16'  , 'NONE')
+call s:Set('Function'          , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
+
+call s:Set('Identifier'        , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
+call s:Set('Special'           , 'LightGray' , 'Black'     , '252  , '16'  , 'NONE')
+call s:Set('MatchParen'        , 'Black'     , 'LightGray' , '16'  , '252' , 'NONE')
+
+call s:Set('elixirDelimiter'   , '#778899'   , 'Black'     , '67'  , '16'  , 'NONE')
+call s:Set('Search'            , '#C0C290'   , '#990808'   , '230' , '196' , 'NONE')
+call s:Set('Visual'            , '#C0C290'   , '#758888'   , '230' , '188' , 'NONE')
+call s:Set('Nontext'           , '#990000'   , 'Black'     , '124' , '16'  , 'NONE')
+
+call s:Set('Directory'         , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
+call s:Set('Title'             , '#C0C290'   , 'Black'     , '230' , '16'  , 'bold')
+call s:Set('Todo'              , '#181818'   , '#C0C290'   , '232' , '230' , 'bold')
+
+call s:Set('Pmenu'             , '#FFFFFF'   , '#C0C290'   , '255' , '230' , 'NONE')
+call s:Set('PmenuSel'          , '#C0C280'   , 'Black'     , '230' , '16'  , 'NONE')
+
+call s:Set('helpSpecial'       , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
+call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'     , '230' , '16'  , 'underline')
 
 " ------ Coustom ------
 hi VertSplit guifg=Black guibg=White
