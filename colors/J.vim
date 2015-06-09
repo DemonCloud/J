@@ -34,6 +34,7 @@ function! s:Link(prop,linker)
 	execute lstr
 endfunction
 
+
 " Vim Normal
 " Default Normal Global
 call s:Set('Normal'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
@@ -42,6 +43,7 @@ call s:Set('Normal'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NO
 call s:Set('Cursor'            , 'Black'     , '#FFFFFF'   , '16'  , '252' , 'NONE')
 call s:Set('CursorLine'        , '#FFFFFF'   , '#080808'   , '252' , '234' , 'NONE')
 call s:Set('CursorLineNr'      , '#990808'   , '#080808'   , '15'  , '16'  , 'NONE')
+call s:Set('iCursor'					 , '#FFFFFF'	 , '#080808'	 , '252' , '16'	 , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , 'Black'     , '248' , '16'  , 'NONE')
 call s:Set('Folded'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
@@ -69,7 +71,7 @@ call s:Set('Directory'         , '#DB4301'   , 'Black'     , '208' , '16'  , 'NO
 call s:Set('Title'             , '#C0C290'   , 'Black'     , '230' , '16'  , 'bold')
 call s:Set('Todo'              , '#181818'   , '#C0C290'   , '232' , '230' , 'bold')
 
-call s:Set('Pmenu'             , '#C0C280'   , '#080808'   , '230' , '233' , 'NONE')
+call s:Set('Pmenu'             , '#C0C280'   , '#181818'   , '230' , '233' , 'NONE')
 call s:Set('PmenuSel'          , '#F0F0F0'   , 'Black'     , '255' , '16'  , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
@@ -106,24 +108,22 @@ call s:Link('vimNotation'    , 'vimMapLhs')
 call s:Link('vimAutoEvent'   , 'vimIsCommand')
 
 " HTML Syntax
-call s:Set('htmlTag','#DF642F','Black','208','16','NONE')
+call s:Set('htmlTag'         , '#DF642F' , 'Black' , '208' , '16' , 'NONE')
+call s:Set('htmlArg'         , '#A9A9A9' , 'Black' , '246' , '16' , 'NONE')
+call s:Set('htmlTitle'       , 'Red'     , 'Black' , '196' , '16' , 'NONE')
+call s:Set('htmlH1'          , '#C2C280' , 'Black' , '230' , '16' , 'underline')
+call s:Set('htmlLink'        , '#41A0AD' , 'Black' , '69'  , '16' , 'underline')
+call s:Set('htmlSpecialChar' , '#114180' , 'Black' , '78'  , '16' , 'NONE')
 
-call s:Link('htmlEndTag', 'htmlTag')
-call s:Link('htmlTagN', 'htmlTag')
-call s:Link('htmlTagName', 'htmlTag')
-call s:Link('htmlSpecialTagName', 'htmlTag')
-
-hi htmlArg guifg=#A9A9A9 guibg=Black gui=NONE cterm=NONE term=NONE
-hi htmlTitle guifg=Red guibg=Black gui=NONE cterm=NONE term=NONE
-hi htmlH1 guifg=#F0F0F0 guibg=Black gui=underline cterm=underline term=underline
-hi link htmlH2 htmlH1
-hi link htmlH3 htmlH1
-hi link htmlH4 htmlH1
-hi link htmlH5 htmlH1
-hi link htmlH6 htmlH1
-
-hi htmlLink guifg=#41A0AD guibg=Black gui=underline cterm=underline term=underline
-hi htmlSpecialChar guifg=#114180 guibg=Black gui=NONE cterm=NONE term=NONE  
+call s:Link('htmlEndTag'         , 'htmlTag')
+call s:Link('htmlTagN'           , 'htmlTag')
+call s:Link('htmlTagName'        , 'htmlTag')
+call s:Link('htmlSpecialTagName' , 'htmlTag')
+call s:Link('htmlH2'             , 'htmlH1')
+call s:Link('htmlH3'             , 'htmlH1')
+call s:Link('htmlH4'             , 'htmlH1')
+call s:Link('htmlH5'             , 'htmlH1')
+call s:Link('htmlH6'             , 'htmlH1')
 
 " CSS Syntax
 hi cssTagName guifg=#DB4000 ctermfg=15 guibg=black ctermbg=16 gui=underline cterm=underline term=underline
