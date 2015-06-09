@@ -69,15 +69,15 @@ call s:Set('Directory'         , '#DB4301'   , 'Black'     , '208' , '16'  , 'NO
 call s:Set('Title'             , '#C0C290'   , 'Black'     , '230' , '16'  , 'bold')
 call s:Set('Todo'              , '#181818'   , '#C0C290'   , '232' , '230' , 'bold')
 
-call s:Set('Pmenu'             , '#FFFFFF'   , '#C0C290'   , '255' , '230' , 'NONE')
-call s:Set('PmenuSel'          , '#C0C280'   , 'Black'     , '230' , '16'  , 'NONE')
+call s:Set('Pmenu'             , '#C0C280'   , '#181818'   , '230' , '233' , 'NONE')
+call s:Set('PmenuSel'          , '#FFFFFF'   , 'Black'     , '255' , '16'  , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
 call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'     , '230' , '16'  , 'underline')
 call s:Set('helpNote'          , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
 
 " ------ Coustom ------
-call s:Set('VertSplit'         , 'Black'     , '#C0C280'   , '16'  , '230' , 'NONE')
+call s:Set('VertSplit'         , '#C0C280'   , '#Black'    , '230' , '16'  , 'NONE')
 call s:Set('TabLine'           , '#666666'   , '#060606'   , '251' , '232' , 'underline')
 call s:Set('TabLineFill'       , '#C0C280'   , '#060606'   , '230' , '232' , 'underline')
 call s:Set('TabLineSel'        , '#000000'   , '#C0C280'   , '16'  , '230' , 'NONE')
@@ -104,7 +104,6 @@ call s:Link('vimHiCTermFgBg','vimHiGroup')
 call s:Link('vimSynType','vimHiGroup')
 call s:Link('vimNotation','vimMapLhs')
 call s:Link('vimAutoEvent','vimIsCommand')
-
 
 " HTML Syntax
 hi htmlTag guifg=#DF642F guibg=Black gui=NONE cterm=NONE term=NONE
