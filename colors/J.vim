@@ -4,7 +4,7 @@
 " Maintainer: YIJUN 
 " License:    MIT
 " 
-" This Vim checme will rebuild in 2015 10 28
+" This Vim ColorScheme will rebuild in 2015 10 28
 
 highlight clear
 
@@ -37,13 +37,12 @@ endfunction
 
 " Vim Normal
 " Default Normal Global
-call s:Set('Normal'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
+call s:Set('Normal'       , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE')
 
 " Cursor
-call s:Set('Cursor'            , 'Black'     , '#FFFFFF'   , '16'  , '252' , 'NONE')
-call s:Set('CursorLine'        , '#FFFFFF'   , '#080808'   , '252' , '234' , 'NONE')
-call s:Set('CursorLineNr'      , '#990808'   , '#080808'   , '15'  , '16'  , 'NONE')
-call s:Set('iCursor'					 , '#FFFFFF'	 , '#080808'	 , '252' , '16'	 , 'NONE')
+call s:Set('Cursor'       , 'Black'     , '#FFFFFF' , '16'  , '252' , 'NONE')
+call s:Set('CursorLine'   , '#FFFFFF'   , '#080808' , '252' , '232' , 'NONE')
+call s:Set('CursorLineNr' , '#990808'   , '#080808' , '160' , '232' , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , 'Black'     , '248' , '16'  , 'NONE')
 call s:Set('Folded'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
@@ -51,7 +50,7 @@ call s:Set('Folded'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NO
 call s:Set('LineNr'            , '#FFFFFF'   , 'Black'     , '248' , '16'  , 'NONE')
 call s:Set('Statement'         , '#FFFFFF'   , 'Black'     , '15'  , '16'  , 'bold')
 call s:Set('PreProc'           , '#FFFFFF'   , 'Black'     , '15'  , '16'  , 'bold')
-call s:Set('String'            , '#79BE62'   , 'Black'     , '82'  , '16'  , 'NONE')
+call s:Set('String'            , '#79BE62'   , 'Black'     , '83'  , '16'  , 'NONE')
 call s:Set('Comment'           , '#767676'   , 'Black'     , '243' , '16'  , 'NONE')
 
 call s:Set('Constant'          , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
@@ -79,11 +78,11 @@ call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'     , '230' , '16'  , 'un
 call s:Set('helpNote'          , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
 
 " ------ Coustom ------
-call s:Set('VertSplit'         , '#C0C280'   , 'Black'    , '230' , '16'  , 'NONE')
-call s:Set('TabLine'           , '#666666'   , '#060606'   , '251' , '232' , 'underline')
-call s:Set('TabLineFill'       , '#C0C280'   , '#060606'   , '230' , '232' , 'underline')
-call s:Set('TabLineSel'        , '#000000'   , '#C0C280'   , '16'  , '230' , 'NONE')
-call s:Set('StatusLine'        , '#C0C280'   , 'Black'     , '230' , '16'  , 'underline')
+call s:Set('VertSplit'   , '#C0C280' , 'Black'   , '230' , '16'  , 'NONE')
+call s:Set('TabLine'     , '#666666' , '#060606' , '251' , '232' , 'underline')
+call s:Set('TabLineFill' , '#C0C280' , '#060606' , '230' , '232' , 'underline')
+call s:Set('TabLineSel'  , '#000000' , '#C0C280' , '16'  , '230' , 'NONE')
+call s:Set('StatusLine'  , '#C0C280' , 'Black'   , '230' , '16'  , 'underline')
 
 
 
