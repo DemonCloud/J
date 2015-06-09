@@ -91,7 +91,7 @@ call s:Set('vimOption','#C0C280','Black','230','16','NONE')
 call s:Set('vimGroup','#C0C280','Black','230','16','NONE')
 call s:Set('vimCommentTitle','#737373','Black','243','16','NONE')
 call s:Set('vimCommand','Red','Black','196','16','NONE')
-call s:Set('vimIsCommand','#DB4301','208','16','NONE')
+call s:Set('vimIsCommand','#DB4301','Black','208','16','NONE')
 call s:Set('vimMapLhs','#D5523A','Black','209','16','NONE')
 
 call s:Link('vimHiClear','vimHiGroup')
