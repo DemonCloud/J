@@ -77,7 +77,7 @@ call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'     , '230' , '16'  , 'un
 call s:Set('helpNote'          , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
 
 " ------ Coustom ------
-call s:Set('VertSplit'         , '#C0C280'   , '#Black'    , '230' , '16'  , 'NONE')
+call s:Set('VertSplit'         , '#C0C280'   , 'Black'    , '230' , '16'  , 'NONE')
 call s:Set('TabLine'           , '#666666'   , '#060606'   , '251' , '232' , 'underline')
 call s:Set('TabLineFill'       , '#C0C280'   , '#060606'   , '230' , '232' , 'underline')
 call s:Set('TabLineSel'        , '#000000'   , '#C0C280'   , '16'  , '230' , 'NONE')
@@ -87,23 +87,23 @@ call s:Set('StatusLine'        , '#C0C280'   , 'Black'     , '230' , '16'  , 'un
 
 " ------ Language Syntax ------
 " Vim Syntax
-call s:Set('vimOption','#C0C280','Black','230','16','NONE')
-call s:Set('vimGroup','#C0C280','Black','230','16','NONE')
-call s:Set('vimCommentTitle','#737373','Black','243','16','NONE')
-call s:Set('vimCommand','Red','Black','196','16','NONE')
-call s:Set('vimIsCommand','#DB4301','Black','208','16','NONE')
-call s:Set('vimMapLhs','#D5523A','Black','209','16','NONE')
+call s:Set('vimOption'       , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
+call s:Set('vimGroup'        , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
+call s:Set('vimCommentTitle' , '#737373' , 'Black' , '243' , '16' , 'NONE')
+call s:Set('vimCommand'      , 'Red'     , 'Black' , '196' , '16' , 'NONE')
+call s:Set('vimIsCommand'    , '#DB4301' , 'Black' , '208' , '16' , 'NONE')
+call s:Set('vimMapLhs'       , '#D5523A' , 'Black' , '209' , '16' , 'NONE')
 
-call s:Link('vimHiClear','vimHiGroup')
-call s:Link('vimHiGroup','vimHiGroup')
-call s:Link('vimHiAttrib','vimHiGroup')
-call s:Link('vimHiGui','vimHiGroup')
-call s:Link('vimHiGuiFgBg','vimHiGroup')
-call s:Link('vimHiCTerm','vimHiGroup')
-call s:Link('vimHiCTermFgBg','vimHiGroup')
-call s:Link('vimSynType','vimHiGroup')
-call s:Link('vimNotation','vimMapLhs')
-call s:Link('vimAutoEvent','vimIsCommand')
+call s:Link('vimHiClear'     , 'vimHiGroup')
+call s:Link('vimHiGroup'     , 'vimHiGroup')
+call s:Link('vimHiAttrib'    , 'vimHiGroup')
+call s:Link('vimHiGui'       , 'vimHiGroup')
+call s:Link('vimHiGuiFgBg'   , 'vimHiGroup')
+call s:Link('vimHiCTerm'     , 'vimHiGroup')
+call s:Link('vimHiCTermFgBg' , 'vimHiGroup')
+call s:Link('vimSynType'     , 'vimHiGroup')
+call s:Link('vimNotation'    , 'vimMapLhs')
+call s:Link('vimAutoEvent'   , 'vimIsCommand')
 
 " HTML Syntax
 hi htmlTag guifg=#DF642F guibg=Black gui=NONE cterm=NONE term=NONE
