@@ -63,7 +63,7 @@ call s:Set('MatchParen'        , 'Black'     , 'LightGray' , '16'  , '252' , 'NO
 
 call s:Set('elixirDelimiter'   , '#778899'   , 'Black'     , '67'  , '16'  , 'NONE')
 call s:Set('Search'            , '#C0C290'   , '#990808'   , '230' , '196' , 'NONE')
-call s:Set('Visual'            , '#C0C290'   , '#758888'   , '230' , '188' , 'NONE')
+call s:Set('Visual'            , '#C0C290'   , '#758888'   , '232' , '188' , 'NONE')
 call s:Set('Nontext'           , '#990000'   , 'Black'     , '124' , '16'  , 'NONE')
 
 call s:Set('Directory'         , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
