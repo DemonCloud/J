@@ -71,7 +71,7 @@ call s:Set('Directory'         , '#DB4301'   , 'Black'     , '208' , '16'  , 'NO
 call s:Set('Title'             , '#C0C290'   , 'Black'     , '230' , '16'  , 'bold')
 call s:Set('Todo'              , '#181818'   , '#C0C290'   , '232' , '230' , 'bold')
 
-call s:Set('Pmenu'             , '#C0C280'   , '#181818'   , '230' , '233' , 'NONE')
+call s:Set('Pmenu'             , '#C0C280'   , '#060606'   , '230' , '233' , 'NONE')
 call s:Set('PmenuSel'          , '#F0F0F0'   , 'Black'     , '255' , '16'  , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
@@ -126,140 +126,134 @@ call s:Link('htmlH5'             , 'htmlH1')
 call s:Link('htmlH6'             , 'htmlH1')
 
 " CSS Syntax
-hi cssTagName guifg=#DB4000 ctermfg=15 guibg=black ctermbg=16 gui=underline cterm=underline term=underline
-hi cssClassName guifg=#C1C292 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi cssIdentifier guifg=#DC1111 ctermfg=15 guibg=black ctermbg=16 gui=NONE cterm=NONE term=NONE
+call s:Set('cssTagName'        , '#DB43000' , 'Black' , '202' , '16' , 'underline')
+call s:Set('cssClassName'      , '#C1C298'  , 'Black' , '229' , '16' , 'NONE')
+call s:Set('cssIdentifier'     , '#DC1111'  , 'Black' , '160' , '16' , 'NONE')
+call s:Set('cssBoxProp'        , '#855EB8'  , 'Black' , '127' , '16' , 'NONE')
+call s:Set('cssIEUIProp'       , '#881828'  , 'Black' , '88'  , '16' , 'NONE')
+call s:Set('cssUnitDecorators' , '#C0C280'  , 'Black' , '230' , '16' , 'NONE')
+call s:Set('cssError'          , '#990000'  , 'Black' , '124' , '16' , 'NONE')
 
-hi link cssClassNameDot cssClassName 
-hi link cssPseudoClassId cssIdentifier
-
-hi cssBoxProp guifg=#855EB6 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi cssIEUIProp guifg=#881820 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi cssUnitDecorators guifg=#C0C280 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi cssError guifg=#970000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-
-hi link cssImportant cssTagName 
-
-hi link cssUIProp cssBoxProp
-hi link cssAuralProp cssBoxProp
-hi link cssDefinition cssBoxProp
-hi link cssFontProp cssBoxProp
-hi link cssTextProp cssBoxProp
-hi link cssListProp cssBoxProp
-hi link cssColorProp cssBoxProp
-hi link cssPositioningProp cssBoxProp
-hi link cssPageProp cssBoxProp
-hi link cssBorderProp cssBoxProp
-hi link cssBackgroundProp cssBoxProp
-hi link cssTableProp cssBoxProp
-hi link cssAttrRegion cssError 
-hi link cssFontDescriptorProp cssBoxProp
-hi link cssArualProp cssBoxProp
-hi link cssCeneratedContentProp cssBoxProp
-hi link cssDimensionProp cssBoxProp
-hi link cssMultiColumnProp cssBoxProp
-hi link cssGeneratedContentProp cssBoxProp
-hi link cssFlexibleBoxProp cssBoxProp
-
-" for IE CSS Hack
-hi link cssUnicodeEscape Comment 
-hi link cssHack Comment
-
-hi link cssAnimationProp cssTagName
-hi link cssTranformProp cssTagName
-hi link cssTransitionProp cssTagName
+call s:Link('cssClassNameDot'         , 'cssClassName')
+call s:Link('cssPseudoClassId'        , 'cssIdentifier')
+call s:Link('cssImportant'            , 'cssTagName')
+call s:Link('cssUIProp'               , 'cssBoxProp')
+call s:Link('cssAuralProp'            , 'cssBoxProp')
+call s:Link('cssDefinition'           , 'cssBoxProp')
+call s:Link('cssFontProp'             , 'cssBoxProp')
+call s:Link('cssTextProp'             , 'cssBoxProp')
+call s:Link('cssListProp'             , 'cssBoxProp')
+call s:Link('cssColorProp'            , 'cssBoxProp')
+call s:Link('cssPositioningProp'      , 'cssBoxProp')
+call s:Link('cssPageProp'             , 'cssBoxProp')
+call s:Link('cssBorderProp'           , 'cssBoxProp')
+call s:Link('cssBackgroundProp'       , 'cssBoxProp')
+call s:Link('cssTableProp'            , 'cssBoxProp')
+call s:Link('cssAttrRegion'           , 'cssError')
+call s:Link('cssFontDescriptorProp'   , 'cssBoxProp')
+call s:Link('cssArualProp'            , 'cssBoxProp')
+call s:Link('cssCeneratedContentProp' , 'cssBoxProp')
+call s:Link('cssDimensionProp'        , 'cssBoxProp')
+call s:Link('cssMultiColumnProp'      , 'cssBoxProp')
+call s:Link('cssGeneratedContentProp' , 'cssBoxProp')
+call s:Link('cssFlexibleBoxProp'      , 'cssBoxProp')
+call s:Link('cssUnicodeEscape'        , 'Comment')
+call s:Link('cssHack'                 , 'Comment')
+call s:Link('cssAnimationProp'        , 'cssTagName')
+call s:Link('cssTranformProp'         , 'cssTagName')
+call s:Link('cssTransitionProp'       , 'cssTagName')
 
 
 " JavaScript Syntax
-hi jsFunction guifg=#DB4300 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi jsFuncName guifg=#FF6600 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi jsFuncArgs guifg=#E70F0F ctermfg=15 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
-hi jsAssignExpIdent guifg=#3A627B ctermfg=15 guibg=Black ctermbg=16 
-hi jsNumber guifg=#668CB6 guibg=Black
+call s:Set('jsFunction'       , '#DB4300' , 'Black' , '202' , '16' , 'NONE')
+call s:Set('jsFuncName'       , '#FF6600' , 'Black' , '208' , '16' , 'NONE')
+call s:Set('jsFuncArgs'       , '#E70F0F' , 'Black' , '9'   , '16' , 'underline')
+call s:Set('jsAssignExpIdent' , '#3A627B' , 'Black' , '24'  , '16' , 'NONE')
+call s:Set('jsNumber'         , '#669CB6' , 'Black' , '68'  , '16' , 'NONE')
+call s:Set('jsRegexpString'   , '#E21888' , 'Black' , '163' , '16' , 'NONE')
+call s:Set('jsObjectKey'      , '#9E4479' , 'Black' , '206' , '16' , 'NONE')
+call s:Set('jsGlobalObjects'  , '#9E0090' , 'Black' , '201' , '16' , 'NONE')
+call s:Set('jsOperator'       , '#FFFFFF' , 'Black' , '15'  , '16' , 'NONE')
 
-
-hi link jsClass jsAssignExpIdent
-hi jsRegexpString guifg=#C83E8D
-hi javascriptunderscore guifg=#990000 ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-
-hi link jsStorageClass jsFunction
-hi link jsNull jsFunction
-hi link jsThis jsFunction
-hi link jsLabel jsFunction
-hi link jsStatement jsFunction
-hi link jsReturn jsFunction
-hi link jsRepeat jsFunction
-hi link jsFuncCall jsFuncName
-hi link jsPrototype jsFunction
-hi link jsConditional jsFunction
-hi link jsBooleanFalse jsFunction
-hi link jsBooleanTrue  jsFunction
-hi jsObjectKey guifg=#9E4779
-hi jsGlobalObjects guifg=#9E0090 gui=underline
-hi jsOperator guifg=White gui=NONE
-
-hi link jsRegexpCharClass String 
-hi link jsFuncAssignObjChain jsObjectKey
-hi link jsFuncAssignIdent	jsFuncName
-hi link jsFunctionKey jsObjectKey 
-hi link jsRegexpQuantifier jsAssignExpIdent
-hi link jsRegexpOr jsAssignExpIdent
+call s:Link('jsClass'              , 'jsAssignExpIdent')
+call s:Link('jsStorageClass'       , 'jsFunction')
+call s:Link('jsNull'               , 'jsFunction')
+call s:Link('jsThis'               , 'jsFunction')
+call s:Link('jsLabel'              , 'jsFunction')
+call s:Link('jsStatement'          , 'jsFunction')
+call s:Link('jsReturn'             , 'jsFunction')
+call s:Link('jsRepeat'             , 'jsFunction')
+call s:Link('jsFuncCall'           , 'jsFuncName')
+call s:Link('jsPrototype'          , 'jsFunction')
+call s:Link('jsConditional'        , 'jsFunction')
+call s:Link('jsBooleanFalse'       , 'jsFunction')
+call s:Link('jsBooleanTrue'        , 'jsFunction')
+call s:Link('jsRegexpCharClass'    , 'String' )
+call s:Link('jsFuncAssignObjChain' , 'jsObjectKey')
+call s:Link('jsFuncAssignIdent'    , 'jsFuncName')
+call s:Link('jsFunctionKey'        , 'jsObjectKey' )
+call s:Link('jsRegexpQuantifier'   , 'jsAssignExpIdent')
+call s:Link('jsRegexpOr'           , 'jsAssignExpIdent')
 
 " JSON Syntax
-hi jsonKeyword guifg=#DAA68F gui=underline
-hi jsonBrace guifg=#DB4610 gui=NONE
+call s:Set('jsonKeyword' , '#DAA68F' , 'Black' , '217' , '16' , 'underline')
+call s:Set('jsonBrace'   , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
 
 
 " C Syntax
-hi cInclude guifg=#980919 
-hi cIncluded guifg=#879000 
-hi cDefine guifg=#C91E58
-hi cNumber guifg=#668CB6
-hi cFormat guifg=#DB4300
+call s:Set('cInclude'  , '#980919' , 'Black' , '88'  , '16' , 'NONE')
+call s:Set('cIncluded' , '#C2C290' , 'Black' , '230' , '16' , 'NONE')
+call s:Set('cDefine'   , '#C91E58' , 'Black' , '162' , '16' , 'NONE')
+call s:Set('cNumber'   , '#668CB6' , 'Black' , '68'  , '16' , 'NONE')
+call s:Set('cFormat'   , '#DB4300' , 'Black' , '202' , '16' , 'NONE')
 
-hi link cType cInclude 
-hi link cRepeat cInclude
-hi link cStructure cInclude
-hi link cNumbers cNumber
-hi link cString String
-hi link cSpecial String
+call s:Link('cType'      , 'cInclude' )
+call s:Link('cRepeat'    , 'cInclude')
+call s:Link('cStructure' , 'cInclude')
+call s:Link('cNumbers'   , 'cNumber')
+call s:Link('cString'    , 'String')
+call s:Link('cSpecial'   , 'String')
+
 
 "------ Vim Plugin Syntax ------
 
 " Tagbar Plugin
 " https://github.com/majutsushi/tagbar
-hi TagbarScope guifg=#DB4300 guibg=Black
-hi TagbarType guifg=#C91E58 guibg=Black
+call s:Set('TagbarScope' , '#DB4300' , 'Black' , '202' , '16' , 'NONE')
+call s:Set('TagbarType'  , '#C91E58' , 'Black' , '205' , '16' , 'NONE')
 
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
-hi NerdTreeOpenable guifg=#DB4300 gui=bold
-hi NerdTreeCWD guifg=#990902
-hi NerdTreeDir guifg=#DAA68F
-hi NerdTreeFile guifg=#f8f8f8
+call s:Set('NerdTreeOpenable'  , '#DB4300' , 'Black' , '202' , '16' , 'NONE')
+call s:Set('NerdTreeCWD'       , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
+call s:Set('NerdTreeDir'       , '#DAA68F' , 'Black' , '217' , '16' , 'NONE')
+call s:Set('NerdTreeFile'      , '#F8F8F8' , 'Black' , '255' , '16' , 'NONE')
+call s:Set('NerdTreeHelpTitle' , '#990080' , 'Black' , '196' , '16' , 'underline')
 
-hi link NerdTreeUp NerdTreeDir 
-hi NerdTreeHelpTitle guifg=#990000 gui=bold,underline
+call s:Link('NerdTreeUp', 'NerdTreeDir') 
 
 " Gundo Plugin
 " https://github.com/sjl/gundo.vim
-hi GundoCurrentLocation guifg=#DB4300 gui=bold
-hi GundoNumber guifg=#668CB6
-hi GundoNumberField guifg=#DB4300 
+call s:Set('GundoCurrentLocation' , '#DB4300' , 'Black' , '202' , '16' , 'bold')
+call s:Set('GundoNumber'          , '#668CB6' , 'Black' , '111' , '16' , 'NONE')
+call s:Set('GundoNumberField'     , '#DB4300' , 'Black' , '202' , '16' , 'NONE')
 " Gundo diff file
-hi diffNewFile guifg=#79BE62
-hi diffFile guifg=#79BE62
-hi link diffLine GundoCurrentLocation
-hi diffRemoved guifg=#990000 guibg=Black
-hi diffAdded guifg=#79BE62 guibg=Black
+call s:Set('diffRemoved'          , '#990000' , 'Black' , '124' , '16' , 'NONE')
+
+call s:Link('diffLine'    , 'GundoCurrentLocation')
+call s:Link('diffNewFile' , 'String')
+call s:Link('diffFile'    , 'String')
+call s:Link('diffAdded'   , 'String')
+
 
 " Unite Plugin
-hi uniteCandidateSourceName guifg=#DB4300 guibg=Black
-hi uniteSource_File guifg=#F0F0F0 guibg=Black 
-hi uniteCandidateIcon guifg=#79BE62
-hi uniteSource_DirectoryNew guifg=#DB4300
+
+call s:Link('uniteCandidateSourceName' , 'NerdTreeOpenable')
+call s:Link('uniteSource_DirectoryNew' , 'NerdTreeOpenable')
+call s:Link('uniteCandidateIcon'       , 'String')
+call s:Link('uniteSource_File'         , 'NerdTreeFile')
 
 " MRU Plugin
-hi qfFileName guifg=#990000 guibg=Black gui=NONE
-hi link MRUFileName qfFileName
+call s:Link('qfFileName'  , 'diffRemoved')
+call s:Link('MRUFileName' , 'diffRemoved')
 
