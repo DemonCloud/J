@@ -40,7 +40,7 @@ call s:Set('Normal','LightGray','Black','252','16','NONE')
 
 " Cursor
 call s:Set('Cursor'            , 'Black'     , '#FFFFFF'   , '16'  , '252' , 'NONE')
-call s:Set('CusorLine'         , '#FFFFFF'   , '#080808'   , '252' , '234' , 'NONE')
+call s:Set('CursorLine'         , '#FFFFFF'   , '#080808'   , '252' , '234' , 'NONE')
 call s:Set('CursorLineNr'      , '#990808'   , '#080808'   , '15'  , '16'  , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , 'Black'     , '248' , '16'  , 'NONE')
