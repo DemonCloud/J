@@ -34,13 +34,13 @@ function! s:Link(prop,linker)
 	execute lstr
 endfunction
 
-" Vim Normal 
+" Vim Normal
 " Default Normal Global
-call s:Set('Normal','LightGray','Black','252','16','NONE')
+call s:Set('Normal'            , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
 
 " Cursor
 call s:Set('Cursor'            , 'Black'     , '#FFFFFF'   , '16'  , '252' , 'NONE')
-call s:Set('CursorLine'         , '#FFFFFF'   , '#080808'   , '252' , '234' , 'NONE')
+call s:Set('CursorLine'        , '#FFFFFF'   , '#080808'   , '252' , '234' , 'NONE')
 call s:Set('CursorLineNr'      , '#990808'   , '#080808'   , '15'  , '16'  , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , 'Black'     , '248' , '16'  , 'NONE')
@@ -57,7 +57,7 @@ call s:Set('Type'              , '#C0C290'   , 'Black'     , '15'  , '16'  , 'NO
 call s:Set('Function'          , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
 
 call s:Set('Identifier'        , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
-call s:Set('Special'           , 'LightGray' , 'Black'     , '252  , '16'  , 'NONE')
+call s:Set('Special'           , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
 call s:Set('MatchParen'        , 'Black'     , 'LightGray' , '16'  , '252' , 'NONE')
 
 call s:Set('elixirDelimiter'   , '#778899'   , 'Black'     , '67'  , '16'  , 'NONE')
@@ -74,34 +74,36 @@ call s:Set('PmenuSel'          , '#C0C280'   , 'Black'     , '230' , '16'  , 'NO
 
 call s:Set('helpSpecial'       , '#DB4301'   , 'Black'     , '208' , '16'  , 'NONE')
 call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'     , '230' , '16'  , 'underline')
+call s:Set('helpNote'          , 'LightGray' , 'Black'     , '252' , '16'  , 'NONE')
 
 " ------ Coustom ------
-hi VertSplit guifg=Black guibg=White
-hi TabLine guibg=#060606 guifg=#666666 gui=underline cterm=underline term=underline
-hi TabLineFill guibg=#060606 guifg=#C0C280 gui=underline cterm=underline term=underline
-hi TabLineSel guibg=#C0C280 guifg=#000000 gui=NONE cterm=NONE term=NONE
-hi helpNote guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi StatusLine guibg=Black guifg=#C0C280 ctermfg=15 ctermbg=16 gui=underline cterm=underline term=underline 
+call s:Set('VertSplit'         , 'Black'     , '#C0C280'   , '16'  , '230' , 'NONE')
+call s:Set('TabLine'           , '#666666'   , '#060606'   , '251' , '232' , 'underline')
+call s:Set('TabLineFill'       , '#C0C280'   , '#060606'   , '230' , '232' , 'underline')
+call s:Set('TabLineSel'        , '#000000'   , '#C0C280'   , '16'  , '230' , 'NONE')
+call s:Set('StatusLine'        , '#C0C280'   , 'Black'     , '230' , '16'  , 'underline')
+
 
 
 " ------ Language Syntax ------
+" Vim Syntax
+call s:Set('vimOption','#C0C280','Black','230','16','NONE')
+call s:Set('vimGroup','#C0C280','Black','230','16','NONE')
+call s:Set('vimCommentTitle','#737373','Black','243','16','NONE')
+call s:Set('vimCommand','Red','Black','196','16','NONE')
+call s:Set('vimIsCommand','#DB4301','208','16','NONE')
+call s:Set('vimMapLhs','#D5523A','Black','209','16','NONE')
 
-hi vimOption guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimGroup guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiClear guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiGroup guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiAttrib guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiGui guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiGuiFgBg guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiCTerm guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiCTermFgBg guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimSynType guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimCommentTitle guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimCommand guifg=Red ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimIsCommand guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimMapLhs guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimNotation guifg=#D5523A ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimAutoEvent guifg=#DB4300 
+call s:Link('vimHiClear','vimHiGroup')
+call s:Link('vimHiGroup','vimHiGroup')
+call s:Link('vimHiAttrib','vimHiGroup')
+call s:Link('vimHiGui','vimHiGroup')
+call s:Link('vimHiGuiFgBg','vimHiGroup')
+call s:Link('vimHiCTerm','vimHiGroup')
+call s:Link('vimHiCTermFgBg','vimHiGroup')
+call s:Link('vimSynType','vimHiGroup')
+call s:Link('vimNotation','vimMapLhs')
+call s:Link('vimAutoEvent','vimIsCommand')
 
 
 " HTML Syntax
