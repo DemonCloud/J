@@ -25,13 +25,13 @@ function! s:Set(prop,gfg,gbg,tfg,tbg,stl)
 		let hstr .=' gui=' . a:stl . ' cterm=' . a:stl . ' term=' . a:stl
 	endif
 
-	execute hstr
+	exec hstr
 endfunction
 
 " link emplament Scheme
 function! s:Link(prop,linker)
 	let lstr='hi link '. a:prop . ' ' . a:linker
-	execute lstr
+	exec lstr
 endfunction
 
 
@@ -70,7 +70,7 @@ call s:Set('Directory'         , '#DB4301'   , 'Black'   , '208' , '16'  , 'NONE
 call s:Set('Title'             , '#C0C290'   , 'Black'   , '230' , '16'  , 'bold')
 call s:Set('Todo'              , '#181818'   , '#C0C290' , '232' , '230' , 'bold')
 
-call s:Set('Pmenu'             , '#C0C280'   , '#060606' , '230' , '233' , 'NONE')
+call s:Set('Pmenu'             , '#C0C280'   , '#060606' , '230' , '232' , 'NONE')
 call s:Set('PmenuSel'          , '#F0F0F0'   , 'Black'   , '255' , '16'  , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , 'Black'   , '208' , '16'  , 'NONE')
@@ -258,3 +258,4 @@ call s:Link('uniteSource_File'         , 'NerdTreeFile')
 call s:Link('qfFileName'  , 'diffRemoved')
 call s:Link('MRUFileName' , 'diffRemoved')
 
+hi clear SignColumn
