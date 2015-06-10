@@ -198,7 +198,7 @@ call s:Link('jsRegexpQuantifier'   , 'jsAssignExpIdent')
 call s:Link('jsRegexpOr'           , 'jsAssignExpIdent')
 
 " JSON Syntax
-call s:Set('jsonKeyword'  , '#DAA68F' , 'Black' , '217' , '16' , 'underline')
+call s:Set('jsonKeyword'  , '#C0C290' , 'Black' , '230' , '16' , 'NONE')
 call s:Set('jsonBrace'    , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
 
 " Less Syntax
