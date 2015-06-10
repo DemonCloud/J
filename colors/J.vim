@@ -158,6 +158,7 @@ call s:Link('cssDimensionProp'        , 'cssBoxProp')
 call s:Link('cssMultiColumnProp'      , 'cssBoxProp')
 call s:Link('cssGeneratedContentProp' , 'cssBoxProp')
 call s:Link('cssFlexibleBoxProp'      , 'cssBoxProp')
+call s:Link('cssUIAttr'               , 'cssBoxProp')
 call s:Link('cssUnicodeEscape'        , 'Comment')
 call s:Link('cssHack'                 , 'Comment')
 call s:Link('cssAnimationProp'        , 'cssTagName')
@@ -197,9 +198,11 @@ call s:Link('jsRegexpQuantifier'   , 'jsAssignExpIdent')
 call s:Link('jsRegexpOr'           , 'jsAssignExpIdent')
 
 " JSON Syntax
-call s:Set('jsonKeyword' , '#DAA68F' , 'Black' , '217' , '16' , 'underline')
-call s:Set('jsonBrace'   , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
+call s:Set('jsonKeyword'  , '#DAA68F' , 'Black' , '217' , '16' , 'underline')
+call s:Set('jsonBrace'    , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
 
+" Less Syntax
+call s:Set('lessVariable' , '#000080' , 'Black' , '4'   , '16' , 'NONE')
 
 " C Syntax
 call s:Set('cInclude'  , '#980919' , 'Black' , '88'  , '16' , 'NONE')
