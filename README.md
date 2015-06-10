@@ -7,6 +7,7 @@
 <img src="http://7j1zwt.com1.z0.glb.clouddn.com/jvim-vim2.png" alt="J.vim">
 
 #### JavaScript
+###### need JavaScript-Syntax support -> [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
 <img src="http://7j1zwt.com1.z0.glb.clouddn.com/jvim-js.png" alt="JavaScript preview">
 	
 #### CSS
