@@ -203,6 +203,9 @@ call s:Set('jsonBrace'    , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
 
 " Less Syntax
 call s:Set('lessVariable' , '#000080' , 'Black' , '4'   , '16' , 'NONE')
+call s:Set('lessClass'    , '#008080' , 'Black' , '6' , '16' , 'NONE')
+
+call s:Link('lessMixinChar','lessClass')
 
 " C Syntax
 call s:Set('cInclude'  , '#980919' , 'Black' , '88'  , '16' , 'NONE')
