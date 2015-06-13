@@ -59,7 +59,7 @@ call s:Set('Operator'          , 'White'     , 'Black'   , '15'  , '16'  , 'NONE
 
 call s:Set('Error'             , 'White'     , 'Red'     , '15'  , '9'   , 'NONE')
 call s:Set('ErrorMsg'          , 'White'     , 'Red'     , '15'  , '9'   , 'NONE')
-call s:Set('WarningMsg'        , 'White'     , '#FFFF00' , '15'  , '226' , 'NONE')
+call s:Set('WarningMsg'        , 'Red'       , '#FFFF00' , '9'   , '226' , 'NONE')
 
 call s:Set('Keyword'           , '#dfaf87'   , 'Black'   , '180' , '16'  , 'underline')
 call s:Set('Constant'          , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE')
