@@ -37,7 +37,7 @@ endfunction
 
 " Vim Normal
 " Default Normal Global
-call s:Set('Normal'       , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE')
+call s:Set('Normal'            , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE')
 
 " Cursor
 call s:Set('Cursor'            , 'Black'     , '#FFFFFF' , '16'  , '252' , 'NONE')
@@ -49,10 +49,19 @@ call s:Set('Folded'            , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE
 
 call s:Set('LineNr'            , '#FFFFFF'   , 'Black'   , '248' , '16'  , 'NONE')
 call s:Set('Statement'         , '#FFFFFF'   , 'Black'   , '15'  , '16'  , 'bold')
-call s:Set('PreProc'           , '#FFFFFF'   , 'Black'   , '15'  , '16'  , 'bold')
+call s:Set('PreProc'           , '#FFFFFF'   , 'Black'   , '15'  , '16'  , 'NONE')
+call s:Set('PreCondit'         , '#FFFFFF'   , 'Black'   , '15'  , '16'  , 'bold')
 call s:Set('String'            , '#79BE62'   , 'Black'   , '83'  , '16'  , 'NONE')
+call s:Set('Character'         , '#79BE62'   , 'Black'   , '83'  , '16'  , 'NONE')
+call s:Set('Boolean'           , '#DB4301'   , 'Black'   , '208' , '16'  , 'NONE')
 call s:Set('Comment'           , '#767676'   , 'Black'   , '243' , '16'  , 'NONE')
+call s:Set('Operator'          , 'White'     , 'Black'   , '15'  , '16'  , 'NONE')
 
+call s:Set('Error'             , 'White'     , 'Red'     , '15'  , '9'   , 'NONE')
+call s:Set('ErrorMsg'          , 'White'     , 'Red'     , '15'  , '9'   , 'NONE')
+call s:Set('WarningMsg'        , 'White'     , '#FFFF00' , '15'  , '226' , 'NONE')
+
+call s:Set('Keyword'           , '#dfaf87'   , 'Black'   , '180' , '16'  , 'underline')
 call s:Set('Constant'          , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE')
 call s:Set('Type'              , '#C0C290'   , 'Black'   , '15'  , '16'  , 'NONE')
 call s:Set('Function'          , '#DB4301'   , 'Black'   , '208' , '16'  , 'NONE')
@@ -72,6 +81,11 @@ call s:Set('Todo'              , '#181818'   , '#C0C290' , '232' , '230' , 'bold
 
 call s:Set('Pmenu'             , '#C0C280'   , '#060606' , '230' , '232' , 'NONE')
 call s:Set('PmenuSel'          , '#F0F0F0'   , 'Black'   , '255' , '16'  , 'underline')
+call s:Set('PmenuSbar'         , '#C0C280'   , '#060606' , '230' , '232' , 'NONE')
+call s:Set('PemnuThumb'        , '#C0C280'   , '#060606' , '230' , '232' , 'NONE')
+
+call s:Set('Tag'               , '#C0C280'   , 'Black'   , '230' , '16'  , 'NONE')
+call s:Set('Title'             , '#C0C280'   , 'Black'   , '230' , '16'  , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , 'Black'   , '208' , '16'  , 'NONE')
 call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'   , '230' , '16'  , 'underline')
@@ -198,6 +212,7 @@ call s:Link('jsFuncAssignIdent'    , 'jsFuncName')
 call s:Link('jsFunctionKey'        , 'jsObjectKey' )
 call s:Link('jsRegexpQuantifier'   , 'jsAssignExpIdent')
 call s:Link('jsRegexpOr'           , 'jsAssignExpIdent')
+call s:Link('jsSpecial'            , 'jsNumber')
 
 " JSON Syntax
 call s:Set('jsonKeyword'  , '#C0C290' , 'Black' , '230' , '16' , 'NONE')
