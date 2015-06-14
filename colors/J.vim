@@ -98,7 +98,7 @@ call s:Set('TabLineFill'       , '#C0C280'   , '#060606' , '230' , '232' , 'unde
 call s:Set('TabLineSel'        , '#000000'   , '#C0C280' , '16'  , '230' , 'NONE')
 call s:Set('StatusLine'        , '#C0C280'   , 'Black'   , '230' , '16'  , 'underline')
 
-call s:Set('SpecialKey'        , '#383838'   , 'Black'   , '236' , '16'  , 'NONE')
+call s:Set('SpecialKey'        , '#121212'   , 'Black'   , '233' , '16'  , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
