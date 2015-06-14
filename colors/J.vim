@@ -92,13 +92,13 @@ call s:Set('helpHyperTextJump' , '#C0C290'   , 'Black'   , '230' , '16'  , 'unde
 call s:Set('helpNote'          , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE')
 
 " ------ Coustom ------
-call s:Set('VertSplit'   , '#C0C280' , 'Black'   , '230' , '16'  , 'NONE')
-call s:Set('TabLine'     , '#666666' , '#060606' , '251' , '232' , 'underline')
-call s:Set('TabLineFill' , '#C0C280' , '#060606' , '230' , '232' , 'underline')
-call s:Set('TabLineSel'  , '#000000' , '#C0C280' , '16'  , '230' , 'NONE')
-call s:Set('StatusLine'  , '#C0C280' , 'Black'   , '230' , '16'  , 'underline')
+call s:Set('VertSplit'         , '#C0C280'   , 'Black'   , '230' , '16'  , 'NONE')
+call s:Set('TabLine'           , '#666666'   , '#060606' , '251' , '232' , 'underline')
+call s:Set('TabLineFill'       , '#C0C280'   , '#060606' , '230' , '232' , 'underline')
+call s:Set('TabLineSel'        , '#000000'   , '#C0C280' , '16'  , '230' , 'NONE')
+call s:Set('StatusLine'        , '#C0C280'   , 'Black'   , '230' , '16'  , 'underline')
 
-call s:Link('SpecialKey','Comment')
+call s:Set('SpecialKey'        , '#383838'   , 'Black'   , '236' , '16'  , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
