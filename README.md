@@ -1,4 +1,3 @@
-
 ## J.vim
 
 > ColorScheme for My JavaScript Programming
@@ -30,20 +29,20 @@
 
 ### with Vundle 
 
->``Plugin 'DemonCloud/J.vim'``
+``Plugin 'DemonCloud/J.vim'``
 
-> reset Vim and command call ``BundleInstall`` or ``PluginInstall``
+ reset Vim and command call ``BundleInstall`` or ``PluginInstall``
 
 ### with Git 
 
->``git clone https://github.com/DemonCloud/J.vim.git``
+``git clone https://github.com/DemonCloud/J.vim.git``
 
-> then copy(cp) the ``J.vim`` file into your Vim ``colors`` file directory
+ then copy(cp) the ``J.vim`` file into your Vim ``colors`` file directory
 
 ### last setup
-> put this in your ``vimrc`` file
+ put this in your ``vimrc`` file
 
->``colorscheme J``
+``colorscheme J``
 
 
 ## Date
