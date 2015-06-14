@@ -98,7 +98,7 @@ call s:Set('TabLineFill' , '#C0C280' , '#060606' , '230' , '232' , 'underline')
 call s:Set('TabLineSel'  , '#000000' , '#C0C280' , '16'  , '230' , 'NONE')
 call s:Set('StatusLine'  , '#C0C280' , 'Black'   , '230' , '16'  , 'underline')
 
-
+call s:Link('SpecialKey','Comment')
 
 " ------ Language Syntax ------
 " Vim Syntax
@@ -253,6 +253,7 @@ call s:Set('NerdTreeCWD'       , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
 call s:Set('NerdTreeDir'       , '#DAA68F' , 'Black' , '217' , '16' , 'NONE')
 call s:Set('NerdTreeFile'      , '#F8F8F8' , 'Black' , '255' , '16' , 'NONE')
 call s:Set('NerdTreeHelpTitle' , '#990080' , 'Black' , '196' , '16' , 'underline')
+call s:Set('NerdTreeExecFile'  , '#990080' , 'Black' , '196' , '16' , 'NONE')
 
 call s:Link('NerdTreeUp', 'NerdTreeDir') 
 
@@ -271,7 +272,6 @@ call s:Link('diffAdded'   , 'String')
 
 
 " Unite Plugin
-
 call s:Link('uniteCandidateSourceName' , 'NerdTreeOpenable')
 call s:Link('uniteSource_DirectoryNew' , 'NerdTreeOpenable')
 call s:Link('uniteCandidateIcon'       , 'String')
