@@ -250,7 +250,7 @@ call s:Set('TagbarType'  , '#C91E58' , 'Black' , '205' , '16' , 'NONE')
 " https://github.com/scrooloose/nerdtree
 call s:Set('NerdTreeOpenable'  , '#DB4300' , 'Black' , '202' , '16' , 'NONE')
 call s:Set('NerdTreeCWD'       , '#C0C280' , 'Black' , '230' , '16' , 'NONE')
-call s:Set('NerdTreeDir'       , '#DAA68F' , 'Black' , '217' , '16' , 'NONE')
+call s:Set('NerdTreeDir'       , '#C0C288' , 'Black' , '217' , '16' , 'NONE')
 call s:Set('NerdTreeFile'      , '#F8F8F8' , 'Black' , '255' , '16' , 'NONE')
 call s:Set('NerdTreeHelpTitle' , '#990080' , 'Black' , '196' , '16' , 'underline')
 call s:Set('NerdTreeExecFile'  , '#990080' , 'Black' , '196' , '16' , 'NONE')
@@ -280,5 +280,8 @@ call s:Link('uniteSource_File'         , 'NerdTreeFile')
 " MRU Plugin
 call s:Link('qfFileName'  , 'diffRemoved')
 call s:Link('MRUFileName' , 'diffRemoved')
+
+"Ag Search
+call s:Link('qfLineNr','cNumber')
 
 hi clear SignColumn
