@@ -284,4 +284,12 @@ call s:Link('MRUFileName' , 'diffRemoved')
 "Ag Search
 call s:Link('qfLineNr','cNumber')
 
+" Vim Git Syntax
+call s:Set('gitcommitBranch','Red','Black','124','16','NONE')
+
+call s:Link('gitcommitDiscardedType' , 'Function')
+call s:Link('gitcommitDiscardedFile' , 'String')
+call s:Link('gitcommitHeader'        , 'String')
+call s:LInk('gitcommitHead'          , 'Comment')
+
 hi clear SignColumn
