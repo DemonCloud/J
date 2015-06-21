@@ -290,6 +290,6 @@ call s:Set('gitcommitBranch','Red','Black','124','16','NONE')
 call s:Link('gitcommitDiscardedType' , 'Function')
 call s:Link('gitcommitDiscardedFile' , 'String')
 call s:Link('gitcommitHeader'        , 'String')
-call s:LInk('gitcommitHead'          , 'Comment')
+call s:Link('gitcommitHead'          , 'Comment')
 
 hi clear SignColumn
