@@ -47,7 +47,7 @@ call s:Set('CursorLineNr'      , '#990808'   , '#080808' , '160' , '232' , 'NONE
 call s:Set('FoldColumn'        , 'DarkGray'  , 'Black'   , '248' , '16'  , 'NONE')
 call s:Set('Folded'            , 'LightGray' , 'Black'   , '252' , '16'  , 'NONE')
 
-call s:Set('LineNr'            , '#FFFFFF'   , 'Black'   , '248' , '16'  , 'NONE')
+call s:Set('LineNr'            , '#C0C280'   , 'Black'   , '230' , '16'  , 'NONE')
 call s:Set('Statement'         , '#FFFFFF'   , 'Black'   , '15'  , '16'  , 'bold')
 call s:Set('PreProc'           , '#FFFFFF'   , 'Black'   , '15'  , '16'  , 'NONE')
 call s:Set('PreCondit'         , '#FFFFFF'   , 'Black'   , '15'  , '16'  , 'bold')
