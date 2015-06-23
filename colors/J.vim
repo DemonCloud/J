@@ -256,6 +256,7 @@ call s:Set('NerdTreeHelpTitle' , '#990080' , 'Black' , '196' , '16' , 'underline
 call s:Set('NerdTreeExecFile'  , '#990080' , 'Black' , '196' , '16' , 'NONE')
 
 call s:Link('NerdTreeUp', 'NerdTreeDir') 
+call s:Link('NerdTreeClosable','NerdTreeFile')
 
 " Gundo Plugin
 " https://github.com/sjl/gundo.vim
@@ -282,7 +283,7 @@ call s:Link('qfFileName'  , 'diffRemoved')
 call s:Link('MRUFileName' , 'diffRemoved')
 
 "Ag Search
-call s:Link('qfLineNr','cNumber')
+call s:Link('qfLineNr'    , 'cNumber')
 
 " Vim Git Syntax
 call s:Set('gitcommitBranch','Red','Black','124','16','NONE')
@@ -291,5 +292,8 @@ call s:Link('gitcommitDiscardedType' , 'Function')
 call s:Link('gitcommitDiscardedFile' , 'String')
 call s:Link('gitcommitHeader'        , 'String')
 call s:Link('gitcommitHead'          , 'Comment')
+
+" For Markdown
+call s:Link('mkdCode'                , 'Function')
 
 hi clear SignColumn
