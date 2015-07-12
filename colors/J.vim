@@ -1,9 +1,9 @@
 " Vim color scheme
 "
 " Name:       J.vim
-" Maintainer: YIJUN 
+" Maintainer: YiJun
 " License:    MIT
-" 
+"
 " This Vim ColorScheme will rebuild in 2015 10 28
 
 highlight clear
@@ -80,7 +80,7 @@ call s:Set('Title'             , '#C0C290'   , '#080808' , '230' , '232' , 'bold
 call s:Set('Todo'              , '#181818'   , '#C0C290' , '232' , '230' , 'bold')
 
 call s:Set('Pmenu'             , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
-call s:Set('PmenuSel'          , '#870000'   , '#080808' , '88'  , '232' , 'underline')
+call s:Set('PmenuSel'          , '#080808'   , '#870000' , '232' , '88'  , 'NONE')
 call s:Set('PmenuSbar'         , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
 call s:Set('PemnuThumb'        , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
 
