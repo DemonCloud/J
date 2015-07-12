@@ -296,4 +296,8 @@ call s:Link('gitcommitHead'          , 'Comment')
 call s:Link('markdownCode'          , 'Function')
 call s:Link('markdownCodeDelimiter' , 'Function')
 
+" For Man
+call s:Link('manSectionHeading','Function')
+call s:Link('manReference','String')
+
 hi clear SignColumn
