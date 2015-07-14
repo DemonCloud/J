@@ -291,38 +291,28 @@ call s:Link('gitcommitDiscardedType' , 'Function')
 call s:Link('gitcommitDiscardedFile' , 'String')
 call s:Link('gitcommitHeader'        , 'String')
 call s:Link('gitcommitHead'          , 'Comment')
+call s:Link('gitIdentityKeyword'     , 'LineNr')
 
-" For Markdown
+" For Markdown Plugin
 call s:Link('markdownCode'          , 'Function')
 call s:Link('markdownCodeDelimiter' , 'Function')
 
-" For Man
-call s:Link('manSectionHeading','Function')
-call s:Link('manReference','String')
+" For Man Plugin
+call s:Link('manSectionHeading' , 'Function')
+call s:Link('manReference'      , 'String')
 
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
+" For GitV Plugin
+call s:Set('gitvGraphEdge0'    , '#00AF00' , '#080808' , '34'  , '232' , 'NONE')
+call s:Set('gitvSubject'       , '#3A3A3A' , '#080808' , '237' , '232' , 'NONE')
+call s:Set('gitvLocalUncommit' , '#870000' , '#080808' , '88'  , '232' , 'NONE')
+call s:Set('gitvRefHead'       , '#0087D7' , '#080808' , '32'  , '232' , 'NONE')
+call s:Set('gitvDate'          , '#005F00' , '#080808' , '22'  , '232' , 'NONE')
 
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
-call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#151515')
-call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
+call s:Link('gitDiff'       , 'gitvSubject')
+call s:Link('gitDate'       , 'gitvDate')
+call s:Link('gitEmail'      , 'gitvRefHead')
+call s:Link('gitHash'       , 'gitvLocalUncommit')
+call s:Link('gitvHash'      , 'gitvLocalUncommit')
+call s:Link('gitvRefRemote' , 'gitvRefHead')
 
 hi clear SignColumn
