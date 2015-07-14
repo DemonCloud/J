@@ -12,9 +12,9 @@ if exists("syntax_on")
 	syntax reset
 endif
 
-set background = "dark"
+set background="dark"
 
-let g:colors_name = "J"
+let g:colors_name="J"
 
 " set Highlight
 function! s:Set(prop,gfg,gbg,tfg,tbg,stl)
