@@ -80,7 +80,7 @@ call s:Set('Title'             , '#C0C290'   , '#080808' , '230' , '232' , 'bold
 call s:Set('Todo'              , '#181818'   , '#C0C290' , '232' , '230' , 'bold')
 
 call s:Set('Pmenu'             , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
-call s:Set('PmenuSel'          , '#000000'   , '#870000' , '16' ,  '88'  , 'underline')
+call s:Set('PmenuSel'          , '#000000'   , '#870000' , '16' ,  '88'  , 'NONE')
 call s:Set('PmenuSbar'         , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
 call s:Set('PemnuThumb'        , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
 
