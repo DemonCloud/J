@@ -37,7 +37,7 @@ endfunction
 
 " Vim Normal
 " Default Normal Global
-call s:Set('Normal'            , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
+call s:Set('Normal'            , '#A8A8A8'   , '#080808' , '248' , '232' , 'NONE')
 
 " Cursor
 call s:Set('Cursor'            , '#080808'   , '#870000' , '232' , '88'  , 'NONE')
@@ -57,9 +57,9 @@ call s:Set('Boolean'           , '#DB4301'   , '#080808' , '208' , '232' , 'NONE
 call s:Set('Comment'           , '#767676'   , '#080808' , '243' , '232' , 'NONE')
 call s:Set('Operator'          , 'White'     , '#080808' , '15'  , '232' , 'NONE')
 
-call s:Set('Error'             , 'White'     , 'Red'     , '15'  , '9'   , 'NONE')
-call s:Set('ErrorMsg'          , 'White'     , 'Red'     , '15'  , '9'   , 'NONE')
-call s:Set('WarningMsg'        , 'Red'       , '#FFFF00' , '9'   , '226' , 'NONE')
+call s:Set('Error'             , 'Red'       , '#080808' , '9'   , '232' , 'underline')
+call s:Set('ErrorMsg'          , 'Red'       , '#080808' , '9'   , '232' , 'underline')
+call s:Set('WarningMsg'        , 'Red'       , '#FFFF87' , '9'   , '228' , 'NONE')
 
 call s:Set('Keyword'           , '#dfaf87'   , '#080808' , '180' , '232' , 'underline')
 call s:Set('Constant'          , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
@@ -71,7 +71,7 @@ call s:Set('Special'           , 'LightGray' , '#080808' , '252' , '232' , 'NONE
 call s:Set('MatchParen'        , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
 
 call s:Set('elixirDelimiter'   , '#778899'   , '#080808' , '67'  , '232' , 'NONE')
-call s:Set('Search'            , '#C0C290'   , '#990808' , '230' , '196' , 'NONE')
+call s:Set('Search'            , '#990808'   , '#080808' , '196' , '232' , 'underline')
 call s:Set('Visual'            , '#C0C290'   , '#758888' , '232' , '188' , 'NONE')
 call s:Set('Nontext'           , '#990000'   , '#080808' , '124' , '232' , 'NONE')
 
@@ -80,7 +80,7 @@ call s:Set('Title'             , '#C0C290'   , '#080808' , '230' , '232' , 'bold
 call s:Set('Todo'              , '#181818'   , '#C0C290' , '232' , '230' , 'bold')
 
 call s:Set('Pmenu'             , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
-call s:Set('PmenuSel'          , '#000000'   , '#870000' , '16' ,  '88'  , 'NONE')
+call s:Set('PmenuSel'          , '#000000'   , '#870000' , '16'  , '88'  , 'NONE')
 call s:Set('PmenuSbar'         , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
 call s:Set('PemnuThumb'        , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
 
@@ -92,13 +92,13 @@ call s:Set('helpHyperTextJump' , '#C0C290'   , '#080808' , '230' , '232' , 'unde
 call s:Set('helpNote'          , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
 
 " ------ Coustom ------
-call s:Set('VertSplit'         , '#C0C280'   , '#080808'   , '230' , '232'  , 'NONE')
+call s:Set('VertSplit'         , '#C0C280'   , '#080808' , '230' , '232' , 'NONE')
 call s:Set('TabLine'           , '#666666'   , '#080808' , '251' , '232' , 'underline')
 call s:Set('TabLineFill'       , '#C0C280'   , '#080808' , '230' , '232' , 'underline')
-call s:Set('TabLineSel'        , '#C0C280'   , '#010101' , '230'  , '16' , 'underline')
-call s:Set('StatusLine'        , '#C0C280'   , '#080808'   , '230' , '232'  , 'underline')
+call s:Set('TabLineSel'        , '#C0C280'   , '#010101' , '230' , '16'  , 'underline')
+call s:Set('StatusLine'        , '#C0C280'   , '#080808' , '230' , '232' , 'underline')
 
-call s:Set('SpecialKey'        , '#121212'   , '#080808'   , '233' , '232'  , 'NONE')
+call s:Set('SpecialKey'        , '#121212'   , '#080808' , '233' , '232' , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
@@ -123,7 +123,7 @@ call s:Link('vimAutoEvent'   , 'vimIsCommand')
 
 " HTML Syntax
 call s:Set('htmlTag'         , '#DF642F' , '#080808' , '208' , '232' , 'NONE')
-call s:Set('htmlArg'         , '#A9A9A9' , '#080808' , '246' , '232' , 'NONE')
+call s:Set('htmlArg'         , '#870000' , '#080808' , '88'  , '232' , 'NONE')
 call s:Set('htmlTitle'       , 'Red'     , '#080808' , '196' , '232' , 'NONE')
 call s:Set('htmlH1'          , '#C2C280' , '#080808' , '230' , '232' , 'underline')
 call s:Set('htmlLink'        , '#41A0AD' , '#080808' , '69'  , '232' , 'underline')
@@ -213,13 +213,21 @@ call s:Link('jsRegexpQuantifier'   , 'jsAssignExpIdent')
 call s:Link('jsRegexpOr'           , 'jsAssignExpIdent')
 call s:Link('jsSpecial'            , 'jsNumber')
 
+" PHP Syntax
+call s:Set('phpRegion'    , '#AF00AF' , '#080808' , '127' , '232' , 'NONE')
+
+call s:Link('phpStaticClasses' , 'Function')
+call s:Link('phpMethodsVar'    , 'LineNr')
+call s:Link('phpKeyword'       , 'phpRegion')
+call s:Link('phpIdentifier'    , 'jsNumber')
+
 " JSON Syntax
 call s:Set('jsonKeyword'  , '#C0C290' , '#080808' , '230' , '232' , 'NONE')
 call s:Set('jsonBrace'    , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
 
 " Less Syntax
 call s:Set('lessVariable' , '#000080' , '#080808' , '4'   , '232' , 'NONE')
-call s:Set('lessClass'    , '#008080' , '#080808' , '6' , '232' , 'NONE')
+call s:Set('lessClass'    , '#008080' , '#080808' , '6'   , '232' , 'NONE')
 
 call s:Link('lessMixinChar','lessClass')
 
