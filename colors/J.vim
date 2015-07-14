@@ -254,7 +254,7 @@ call s:Set('TagbarScope'    , '#DB4300' , '#080808' , '202' , '232' , 'NONE')
 call s:Set('TagbarType'     , '#C91E58' , '#080808' , '205' , '232' , 'NONE')
 call s:Set('TagbarFoldIcon' , '#870000' , '#080808' , '88'  , '232' , 'NONE')
 
-call s:Link('TagbarKind'    , 'LineNr')
+call s:Link('TagbarKind'    , 'Function')
 
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
