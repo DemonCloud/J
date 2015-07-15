@@ -254,7 +254,9 @@ call s:Set('TagbarScope'    , '#DB4300' , '#080808' , '202' , '232' , 'NONE')
 call s:Set('TagbarType'     , '#C91E58' , '#080808' , '205' , '232' , 'NONE')
 call s:Set('TagbarFoldIcon' , '#870000' , '#080808' , '88'  , '232' , 'NONE')
 
-call s:Link('TagbarKind'    , 'Function')
+call s:Link('TagbarKind'      , 'Function')
+call s:Link('TagbarHelpKey'   , 'TagbarFoldIcon')
+call s:Link('TagbarHelpTitle' , 'Function')
 
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
@@ -266,7 +268,7 @@ call s:Set('NerdTreeHelpTitle' , '#990080' , '#080808' , '196' , '232' , 'underl
 call s:Set('NerdTreeExecFile'  , '#990080' , '#080808' , '196' , '232' , 'NONE')
 
 call s:Link('NerdTreeUp', 'NerdTreeDir') 
-call s:Link('NerdTreeClosable','NerdTreeFile')
+call s:Link('NerdTreeClosable','NerdTreeDir')
 
 " Gundo Plugin
 " https://github.com/sjl/gundo.vim
