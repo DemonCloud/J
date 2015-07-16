@@ -19,7 +19,6 @@ let g:colors_name="J"
 " set Highlight
 function! s:Set(prop,gfg,gbg,tfg,tbg,stl)
 	let hstr='hi ' . a:prop . ' guifg=' . a:gfg . ' guibg=' . a:gbg
-
 	if strlen(a:tfg)
 		let hstr .=' ctermfg=' . a:tfg . ' ctermbg=' . a:tbg
 		let hstr .=' gui=' . a:stl . ' cterm=' . a:stl . ' term=' . a:stl
@@ -260,13 +259,15 @@ call s:Link('TagbarHelpTitle' , 'Function')
 
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
-call s:Set('NerdTreeOpenable'  , '#DB4300' , '#080808' , '202' , '232' , 'NONE')
+call s:Set('NerdTreeOpenable'  , '#870000' , '#080808' , '88' , '232' , 'NONE')
 call s:Set('NerdTreeCWD'       , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
 call s:Set('NerdTreeDir'       , '#C0C288' , '#080808' , '217' , '232' , 'NONE')
 call s:Set('NerdTreeFile'      , '#F8F8F8' , '#080808' , '255' , '232' , 'NONE')
 call s:Set('NerdTreeHelpTitle' , '#990080' , '#080808' , '196' , '232' , 'underline')
 call s:Set('NerdTreeExecFile'  , '#990080' , '#080808' , '196' , '232' , 'NONE')
 
+call s:Link('NerdTreeHelp','Comment')
+call s:Link('NerdTreeHelpKey','Function')
 call s:Link('NerdTreeUp', 'NerdTreeDir') 
 call s:Link('NerdTreeClosable','NerdTreeDir')
 
