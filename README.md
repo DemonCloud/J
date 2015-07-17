@@ -2,19 +2,21 @@
 
 > ColorScheme for My JavaScript Programming
 
+> Complete Best Support Gvim && 256 Term rendering
+
 ## Install
 
 ### with Vundle 
 
 ``Plugin 'DemonCloud/J.vim'``
 
- reset Vim and command call ``BundleInstall`` or ``PluginInstall``
+ Restart Vim and command call ``BundleInstall`` or ``PluginInstall``
 
 ### with Git 
 
 ``git clone https://github.com/DemonCloud/J.vim.git``
 
- then copy the ``J.vim`` file into your Vim ``colors`` file directory
+ Then copy the ``J.vim`` file into your Vim ``colors`` file directory
 
 ### last setup
  put this in your ``vimrc`` file
