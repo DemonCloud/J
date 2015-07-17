@@ -46,7 +46,7 @@ call s:Set('CursorLineNr'      , '#990808'   , '#080808' , '160' , '16'  , 'NONE
 call s:Set('FoldColumn'        , 'DarkGray'  , '#080808' , '248' , '232' , 'NONE')
 call s:Set('Folded'            , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
 
-call s:Set('LineNr'            , '#C0C280'   , '#080808' , '230' , '232' , 'NONE')
+call s:Set('LineNr'            , '#C0C280'   , '#080808' , '143' , '232' , 'NONE')
 call s:Set('Statement'         , '#FFFFFF'   , '#080808' , '15'  , '232' , 'bold')
 call s:Set('PreProc'           , '#FFFFFF'   , '#080808' , '15'  , '232' , 'NONE')
 call s:Set('PreCondit'         , '#FFFFFF'   , '#080808' , '15'  , '232' , 'bold')
@@ -62,7 +62,7 @@ call s:Set('WarningMsg'        , 'Red'       , '#FFFF87' , '9'   , '228' , 'NONE
 
 call s:Set('Keyword'           , '#dfaf87'   , '#080808' , '180' , '232' , 'underline')
 call s:Set('Constant'          , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
-call s:Set('Type'              , '#C0C290'   , '#080808' , '15'  , '232' , 'NONE')
+call s:Set('Type'              , '#C0C290'   , '#080808' , '143' , '232' , 'NONE')
 call s:Set('Function'          , '#DB4301'   , '#080808' , '208' , '232' , 'NONE')
 
 call s:Set('Identifier'        , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
@@ -71,38 +71,38 @@ call s:Set('MatchParen'        , 'LightGray' , '#080808' , '252' , '232' , 'NONE
 
 call s:Set('elixirDelimiter'   , '#778899'   , '#080808' , '67'  , '232' , 'NONE')
 call s:Set('Search'            , '#990808'   , '#080808' , '196' , '232' , 'underline')
-call s:Set('Visual'            , '#C0C290'   , '#758888' , '232' , '188' , 'NONE')
+call s:Set('Visual'            , '#C0C290'   , '#758888' , '143' , '188' , 'NONE')
 call s:Set('Nontext'           , '#990000'   , '#080808' , '124' , '232' , 'NONE')
 
 call s:Set('Directory'         , '#DB4301'   , '#080808' , '208' , '232' , 'NONE')
-call s:Set('Title'             , '#C0C290'   , '#080808' , '230' , '232' , 'bold')
-call s:Set('Todo'              , '#181818'   , '#C0C290' , '232' , '230' , 'bold')
+call s:Set('Title'             , '#C0C290'   , '#080808' , '143' , '232' , 'bold')
+call s:Set('Todo'              , '#181818'   , '#C0C290' , '232' , '143' , 'bold')
 
-call s:Set('Pmenu'             , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
+call s:Set('Pmenu'             , '#C0C280'   , '#000000' , '143' , '16'  , 'NONE')
 call s:Set('PmenuSel'          , '#000000'   , '#870000' , '16'  , '88'  , 'NONE')
-call s:Set('PmenuSbar'         , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
-call s:Set('PemnuThumb'        , '#C0C280'   , '#000000' , '230' , '16'  , 'NONE')
+call s:Set('PmenuSbar'         , '#C0C280'   , '#000000' , '143' , '16'  , 'NONE')
+call s:Set('PemnuThumb'        , '#C0C280'   , '#000000' , '143' , '16'  , 'NONE')
 
-call s:Set('Tag'               , '#C0C280'   , '#080808' , '230' , '232' , 'NONE')
-call s:Set('Title'             , '#C0C280'   , '#080808' , '230' , '232' , 'underline')
+call s:Set('Tag'               , '#C0C280'   , '#080808' , '143' , '232' , 'NONE')
+call s:Set('Title'             , '#C0C280'   , '#080808' , '143' , '232' , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , '#080808' , '208' , '232' , 'NONE')
-call s:Set('helpHyperTextJump' , '#C0C290'   , '#080808' , '230' , '232' , 'underline')
+call s:Set('helpHyperTextJump' , '#C0C290'   , '#080808' , '143' , '232' , 'underline')
 call s:Set('helpNote'          , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
 
 " ------ Coustom ------
-call s:Set('VertSplit'         , '#C0C280'   , '#080808' , '230' , '232' , 'NONE')
+call s:Set('VertSplit'         , '#C0C280'   , '#080808' , '143' , '232' , 'NONE')
 call s:Set('TabLine'           , '#666666'   , '#080808' , '251' , '232' , 'underline')
-call s:Set('TabLineFill'       , '#C0C280'   , '#080808' , '230' , '232' , 'underline')
-call s:Set('TabLineSel'        , '#C0C280'   , '#010101' , '230' , '16'  , 'underline')
-call s:Set('StatusLine'        , '#C0C280'   , '#080808' , '230' , '232' , 'underline')
+call s:Set('TabLineFill'       , '#C0C280'   , '#080808' , '143' , '232' , 'underline')
+call s:Set('TabLineSel'        , '#C0C280'   , '#010101' , '143' , '16'  , 'underline')
+call s:Set('StatusLine'        , '#C0C280'   , '#080808' , '143' , '232' , 'underline')
 
 call s:Set('SpecialKey'        , '#121212'   , '#080808' , '233' , '232' , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
-call s:Set('vimOption'       , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
-call s:Set('vimGroup'        , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
+call s:Set('vimOption'       , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
+call s:Set('vimGroup'        , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
 call s:Set('vimCommentTitle' , '#737373' , '#080808' , '243' , '232' , 'NONE')
 call s:Set('vimCommand'      , 'Red'     , '#080808' , '196' , '232' , 'NONE')
 call s:Set('vimIsCommand'    , '#DB4301' , '#080808' , '208' , '232' , 'NONE')
@@ -145,7 +145,7 @@ call s:Set('cssClassName'      , '#C1C298' , '#080808' , '229' , '232' , 'NONE')
 call s:Set('cssIdentifier'     , '#DC1111' , '#080808' , '160' , '232' , 'NONE')
 call s:Set('cssBoxProp'        , '#855EB8' , '#080808' , '62' , '232' , 'NONE')
 call s:Set('cssIEUIProp'       , '#881828' , '#080808' , '88'  , '232' , 'NONE')
-call s:Set('cssUnitDecorators' , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
+call s:Set('cssUnitDecorators' , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
 call s:Set('cssError'          , '#990000' , '#080808' , '124' , '232' , 'NONE')
 
 call s:Link('cssClassNameDot'         , 'cssClassName')
@@ -223,8 +223,8 @@ call s:Link('phpVarSeletor'    , 'jsNumber')
 call s:Link('phpClass'         , 'Function')
 
 " JSON Syntax
-call s:Set('jsonKeyword'  , '#C0C290' , '#080808' , '230' , '232' , 'NONE')
-call s:Set('jsonBrace'    , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
+call s:Set('jsonKeyword'  , '#C0C290' , '#080808' , '143' , '232' , 'NONE')
+call s:Set('jsonBrace'    , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
 
 " Less Syntax
 call s:Set('lessVariable' , '#000080' , '#080808' , '4'   , '232' , 'NONE')
@@ -262,8 +262,8 @@ call s:Link('TagbarHelpTitle' , 'Function')
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
 call s:Set('NerdTreeOpenable'  , '#870000' , '#080808' , '88' , '232' , 'NONE')
-call s:Set('NerdTreeCWD'       , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
-call s:Set('NerdTreeDir'       , '#C0C288' , '#080808' , '217' , '232' , 'NONE')
+call s:Set('NerdTreeCWD'       , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
+call s:Set('NerdTreeDir'       , '#C0C288' , '#080808' , '142' , '232' , 'NONE')
 call s:Set('NerdTreeFile'      , '#989898' , '#080808' , '247' , '232' , 'NONE')
 call s:Set('NerdTreeHelpTitle' , '#990080' , '#080808' , '196' , '232' , 'underline')
 call s:Set('NerdTreeExecFile'  , '#990080' , '#080808' , '196' , '232' , 'NONE')
