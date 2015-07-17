@@ -264,7 +264,7 @@ call s:Link('TagbarHelpTitle' , 'Function')
 call s:Set('NerdTreeOpenable'  , '#870000' , '#080808' , '88' , '232' , 'NONE')
 call s:Set('NerdTreeCWD'       , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
 call s:Set('NerdTreeDir'       , '#C0C288' , '#080808' , '217' , '232' , 'NONE')
-call s:Set('NerdTreeFile'      , '#989898' , '#080808' , '255' , '247' , 'NONE')
+call s:Set('NerdTreeFile'      , '#989898' , '#080808' , '247' , '232' , 'NONE')
 call s:Set('NerdTreeHelpTitle' , '#990080' , '#080808' , '196' , '232' , 'underline')
 call s:Set('NerdTreeExecFile'  , '#990080' , '#080808' , '196' , '232' , 'NONE')
 
