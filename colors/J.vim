@@ -219,7 +219,7 @@ call s:Link('phpStaticClasses' , 'Function')
 call s:Link('phpMethodsVar'    , 'LineNr')
 call s:Link('phpKeyword'       , 'phpRegion')
 call s:Link('phpIdentifier'    , 'jsNumber')
-call s:Link('phpVarSeletor'    , 'jsNumber')
+call s:Link('phpVarSelector'    , 'jsNumber')
 call s:Link('phpClass'         , 'Function')
 
 " JSON Syntax
@@ -263,7 +263,7 @@ call s:Link('TagbarHelpTitle' , 'Function')
 " https://github.com/scrooloose/nerdtree
 call s:Set('NerdTreeOpenable'  , '#870000' , '#080808' , '88' , '232' , 'NONE')
 call s:Set('NerdTreeCWD'       , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
-call s:Set('NerdTreeDir'       , '#C0C288' , '#080808' , '142' , '232' , 'NONE')
+call s:Set('NerdTreeDir'       , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
 call s:Set('NerdTreeFile'      , '#989898' , '#080808' , '247' , '232' , 'NONE')
 call s:Set('NerdTreeHelpTitle' , '#990080' , '#080808' , '196' , '232' , 'underline')
 call s:Set('NerdTreeExecFile'  , '#990080' , '#080808' , '196' , '232' , 'NONE')
