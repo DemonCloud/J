@@ -213,12 +213,14 @@ call s:Link('jsRegexpOr'           , 'jsAssignExpIdent')
 call s:Link('jsSpecial'            , 'jsNumber')
 
 " PHP Syntax
-call s:Set('phpRegion'    , '#AF00AF' , '#080808' , '127' , '232' , 'NONE')
+call s:Set('phpRegion'    , '#F8F8F8' , '#080808' , '253' , '232' , 'NONE')
 
 call s:Link('phpStaticClasses' , 'Function')
 call s:Link('phpMethodsVar'    , 'LineNr')
 call s:Link('phpKeyword'       , 'phpRegion')
 call s:Link('phpIdentifier'    , 'jsNumber')
+call s:Link('phpVarSeletor'    , 'jsNumber')
+call s:Link('phpClass'         , 'Function')
 
 " JSON Syntax
 call s:Set('jsonKeyword'  , '#C0C290' , '#080808' , '230' , '232' , 'NONE')
@@ -262,7 +264,7 @@ call s:Link('TagbarHelpTitle' , 'Function')
 call s:Set('NerdTreeOpenable'  , '#870000' , '#080808' , '88' , '232' , 'NONE')
 call s:Set('NerdTreeCWD'       , '#C0C280' , '#080808' , '230' , '232' , 'NONE')
 call s:Set('NerdTreeDir'       , '#C0C288' , '#080808' , '217' , '232' , 'NONE')
-call s:Set('NerdTreeFile'      , '#F8F8F8' , '#080808' , '255' , '232' , 'NONE')
+call s:Set('NerdTreeFile'      , '#989898' , '#080808' , '255' , '247' , 'NONE')
 call s:Set('NerdTreeHelpTitle' , '#990080' , '#080808' , '196' , '232' , 'underline')
 call s:Set('NerdTreeExecFile'  , '#990080' , '#080808' , '196' , '232' , 'NONE')
 
