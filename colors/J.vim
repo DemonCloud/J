@@ -89,15 +89,19 @@ call s:Set('Title'             , '#C0C280'   , '#080808' , '143' , '232' , 'unde
 call s:Set('helpSpecial'       , '#DB4301'   , '#080808' , '208' , '232' , 'NONE')
 call s:Set('helpHyperTextJump' , '#C0C290'   , '#080808' , '143' , '232' , 'underline')
 call s:Set('helpNote'          , 'LightGray' , '#080808' , '252' , '232' , 'NONE')
+call s:Set('helpVim'           , '#870000'   , '#080808' , '88'  , '232' , 'NONE')
+
+call s:Link('helpSectionDelim' , 'helpVim')
+call s:Link('helpHeader'       , 'helpVim')
 
 " ------ Coustom ------
-call s:Set('VertSplit'         , '#C0C280'   , '#080808' , '143' , '232' , 'NONE')
-call s:Set('TabLine'           , '#666666'   , '#080808' , '251' , '232' , 'underline')
-call s:Set('TabLineFill'       , '#C0C280'   , '#080808' , '143' , '232' , 'underline')
-call s:Set('TabLineSel'        , '#C0C280'   , '#010101' , '143' , '16'  , 'underline')
-call s:Set('StatusLine'        , '#C0C280'   , '#080808' , '143' , '232' , 'underline')
+call s:Set('VertSplit'   , '#C0C280'  , '#080808' , '143' , '232' , 'NONE')
+call s:Set('TabLine'     , '#666666'  , '#080808' , '251' , '232' , 'underline')
+call s:Set('TabLineFill' , '#C0C280'  , '#080808' , '143' , '232' , 'underline')
+call s:Set('TabLineSel'  , '#C0C280'  , '#010101' , '143' , '16'  , 'underline')
+call s:Set('StatusLine'  , '#C0C280'  , '#080808' , '143' , '232' , 'underline')
 
-call s:Set('SpecialKey'        , '#121212'   , '#080808' , '233' , '232' , 'NONE')
+call s:Set('SpecialKey'  , '#121212'  , '#080808' , '233' , '232' , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
