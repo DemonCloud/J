@@ -31,10 +31,10 @@ endfunction
 function! s:Link(prop,linker)
 	let lstr='hi link '. a:prop . ' ' . a:linker
 	exec lstr
-endfunction
+	endfunction
 
 
-" Vim Normal
+	" Vim Normal
 " Default Normal Global
 call s:Set('Normal'            , '#A8A8A8'   , '#080808' , '248' , '232' , 'NONE')
 
@@ -123,6 +123,7 @@ call s:Link('vimVar'         , 'vimIsCommand')
 call s:Link('vimUserFunc'    , 'vimCommand')
 call s:Link('vimFunction'    , 'Function')
 call s:Link('vimMapModkey'   , 'vimIsCommand')
+call s:Link('vimFuncSID'     , 'Function')
 
 " HTML Syntax
 call s:Set('htmlTag'         , '#DF642F' , '#080808' , '208' , '232' , 'NONE')
