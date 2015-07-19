@@ -131,9 +131,9 @@ call s:Link('vimFuncSID'     , 'Function')
 
 " HTML Syntax
 call s:Set('htmlTag'         , '#DF642F' , '#080808' , '208' , '232' , 'NONE')
-call s:Set('htmlArg'         , '#870000' , '#080808' , '88'  , '232' , 'NONE')
-call s:Set('htmlTitle'       , 'Red'     , '#080808' , '196' , '232' , 'NONE')
-call s:Set('htmlH1'          , '#C2C280' , '#080808' , '230' , '232' , 'underline')
+call s:Set('htmlArg'         , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
+call s:Set('htmlTitle'       , '#870000' , '#080808' , '88'  , '232' , 'NONE')
+call s:Set('htmlH1'          , '#C2C280' , '#080808' , '230' , '232' , 'NONE')
 call s:Set('htmlLink'        , '#41A0AD' , '#080808' , '69'  , '232' , 'underline')
 call s:Set('htmlSpecialChar' , '#114180' , '#080808' , '78'  , '232' , 'NONE')
 
