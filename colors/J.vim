@@ -126,14 +126,15 @@ call s:Link('vimAutoEvent'   , 'vimIsCommand')
 call s:Link('vimVar'         , 'vimIsCommand')
 call s:Link('vimUserFunc'    , 'vimCommand')
 call s:Link('vimFunction'    , 'Function')
+call s:Link('vimMapMod'      , 'vimIsCommand')
 call s:Link('vimMapModkey'   , 'vimIsCommand')
 call s:Link('vimFuncSID'     , 'Function')
 
 " HTML Syntax
 call s:Set('htmlTag'         , '#DF642F' , '#080808' , '208' , '232' , 'NONE')
 call s:Set('htmlArg'         , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
-call s:Set('htmlTitle'       , '#870000' , '#080808' , '88'  , '232' , 'NONE')
-call s:Set('htmlH1'          , '#C2C280' , '#080808' , '143' , '232' , 'NONE')
+call s:Set('htmlTitle'       , '#870000' , '#080808' , '88'  , '232' , 'bold')
+call s:Set('htmlH1'          , '#C2C280' , '#080808' , '143' , '232' , 'bold')
 call s:Set('htmlLink'        , '#41A0AD' , '#080808' , '69'  , '232' , 'underline')
 call s:Set('htmlSpecialChar' , '#114180' , '#080808' , '78'  , '232' , 'NONE')
 
@@ -248,12 +249,13 @@ call s:Set('cDefine'   , '#C91E58' , '#080808' , '162' , '232' , 'NONE')
 call s:Set('cNumber'   , '#668CB6' , '#080808' , '68'  , '232' , 'NONE')
 call s:Set('cFormat'   , '#DB4300' , '#080808' , '202' , '232' , 'NONE')
 
-call s:Link('cType'      , 'cInclude' )
+call s:Link('cType'      , 'Function' )
 call s:Link('cRepeat'    , 'cInclude')
 call s:Link('cStructure' , 'cInclude')
 call s:Link('cNumbers'   , 'cNumber')
 call s:Link('cString'    , 'String')
 call s:Link('cSpecial'   , 'String')
+call s:Link('cStatement' , 'Function')
 
 
 "------ Vim Plugin Syntax ------
