@@ -244,7 +244,7 @@ call s:Link('lessMixinChar','lessClass')
 
 " C Syntax
 call s:Set('cInclude'       , '#980918'   , '#080808' , '88'  , '232' , 'NONE')
-call s:Set('cIncluded'      , '#C2C290'   , '#080808' , '230' , '232' , 'NONE')
+call s:Set('cIncluded'      , '#C2C290'   , '#080808' , '143' , '232' , 'NONE')
 call s:Set('cDefine'        , '#C91E58'   , '#080808' , '162' , '232' , 'NONE')
 call s:Set('cNumber'        , '#668CB6'   , '#080808' , '68'  , '232' , 'NONE')
 call s:Set('cType'          , '#C0C280'   , '#080808' , '143' , '232' , 'NONE')
