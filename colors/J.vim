@@ -273,17 +273,18 @@ call s:Link('TagbarHelpTitle' , 'Function')
 
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
-call s:Set('NerdTreeOpenable'  , '#870000' , '#080808' , '88' , '232' , 'NONE')
-call s:Set('NerdTreeCWD'       , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
-call s:Set('NerdTreeDir'       , '#C0C280' , '#080808' , '143' , '232' , 'NONE')
-call s:Set('NerdTreeFile'      , '#989898' , '#080808' , '247' , '232' , 'NONE')
-call s:Set('NerdTreeHelpTitle' , '#990080' , '#080808' , '196' , '232' , 'underline')
-call s:Set('NerdTreeExecFile'  , '#990080' , '#080808' , '196' , '232' , 'NONE')
+call s:Set('NerdTreeOpenable'  , '#870000'      , '#080808' , '88'  , '232' , 'NONE')
+call s:Set('NerdTreeCWD'       , '#C0C280'      , '#080808' , '143' , '232' , 'NONE')
+call s:Set('NerdTreeDir'       , '#C0C280'      , '#080808' , '143' , '232' , 'NONE')
+call s:Set('NerdTreeFile'      , '#989898'      , '#080808' , '247' , '232' , 'NONE')
+call s:Set('NerdTreeHelpTitle' , '#990080'      , '#080808' , '196' , '232' , 'underline')
+call s:Set('NerdTreeExecFile'  , '#990080'      , '#080808' , '196' , '232' , 'NONE')
 
-call s:Link('NerdTreeHelp','Comment')
-call s:Link('NerdTreeHelpKey','Function')
-call s:Link('NerdTreeUp', 'NerdTreeDir') 
-call s:Link('NerdTreeClosable','NerdTreeDir')
+call s:Link('NerdTreeHelp'     , 'Comment')
+call s:Link('NerdTreeHelpKey'  , 'Function')
+call s:Link('NerdTreeUp'       , 'NerdTreeDir')
+call s:Link('NerdTreeClosable' , 'NerdTreeDir')
+call s:Link('NERDTreeRO'       , 'NerdTreeOpenable')
 
 " Gundo Plugin
 " https://github.com/sjl/gundo.vim
