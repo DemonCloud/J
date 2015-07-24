@@ -197,7 +197,7 @@ call s:Set('jsFuncArgs'       , '#E70F0F' , s:jcg1 , '9'   , s:jct1 , 'underline
 call s:Set('jsAssignExpIdent' , '#3A627B' , s:jcg1 , '24'  , s:jct1 , 'NONE')
 call s:Set('jsNumber'         , '#669CB6' , s:jcg1 , '68'  , s:jct1 , 'NONE')
 call s:Set('jsRegexpString'   , '#E21888' , s:jcg1 , '163' , s:jct1 , 'NONE')
-call s:Set('jsObjectKey'      , '#9E4479' , s:jcg1 , '206' , s:jct1 , 'NONE')
+call s:Set('jsObjectKey'      , '#AF00FF' , s:jcg1 , '129' , s:jct1 , 'NONE')
 call s:Set('jsGlobalObjects'  , '#9E0090' , s:jcg1 , '201' , s:jct1 , 'NONE')
 call s:Set('jsOperator'       , '#FFFFFF' , s:jcg1 , '15'  , s:jct1 , 'NONE')
 
