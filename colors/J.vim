@@ -251,6 +251,7 @@ call s:Set('cIncluded'      , '#C2C290'   , s:jcg1 , '143' , s:jct1 , 'NONE')
 call s:Set('cDefine'        , '#C91E58'   , s:jcg1 , '162' , s:jct1 , 'NONE')
 call s:Set('cNumber'        , '#668CB6'   , s:jcg1 , '68'  , s:jct1 , 'NONE')
 call s:Set('cType'          , '#C0C280'   , s:jcg1 , '143' , s:jct1 , 'NONE')
+call s:Set('cCustomFunc'    , '#875F5F'   , s:jcg1 , '95'  , s:jct1 , 'NONE')
 
 call s:Link('cRepeat'       , 'cInclude')
 call s:Link('cStructure'    , 'cInclude')
@@ -261,6 +262,12 @@ call s:Link('cStatement'    , 'Function')
 call s:Link('cFloat'        , 'cNumber')
 call s:Link('cFormat'       , 'Function')
 call s:Link('cAnsiFunction' , 'Function')
+call s:Link('cConditional'  , 'Function')
+call s:Link('cRepeat'       , 'Function')
+call s:Link('cLabel'        , 'Function')
+
+" C++ Syntax
+call s:Link('cppStatement'  , 'Function')
 
 " Shell Syntax
 call s:Set('shCtrlSeq','#005FFF',s:jcg1,'27',s:jct1,'NONE')
