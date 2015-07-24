@@ -4,6 +4,44 @@
 
 > Complete Best Support Gvim && 256 Term rendering
 
+## Support Syntax List
+
+>	1.JavaScript
+
+>	2.HTML
+
+>	3.XML
+
+>	4.CSS
+
+>	5.C
+
+>	6.PHP
+
+>	7.Shell
+
+>	8.VimL
+
+>	9.Markdown
+
+>	10.Git
+
+>	11.tmux.conf
+
+## Feature Support List
+
+>	<del><input type="checkbox" disabled checked>Less</del>
+
+>	<input type="checkbox" disabled>C++
+
+>	<input type="checkbox" disabled>Rust
+
+>	<input type="checkbox" disabled>Go
+
+>	<input type="checkbox" disabled>Lua
+
+>	<input type="checkbox" disabled>JAVA
+
 ## Install
 
 ### with Vundle 
@@ -78,6 +116,7 @@
 <img src="http://7j1zwt.com1.z0.glb.clouddn.com/ymkd.png" alt="YVIM Neo previews"/>
 
 ## Date
+Update  2015.7.24 --Update Shell Highlight Support
 
 Update  2015.7.18 --More Update Highlight Support
 
