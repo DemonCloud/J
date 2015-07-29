@@ -42,8 +42,8 @@ call s:Set('Normal'            , '#A8A8A8'   , s:jcg1    , '248'  , s:jct1 , 'NO
 
 " Cursor
 call s:Set('Cursor'            , s:jcg1      , '#870000' , s:jct1 , '88'   , 'NONE')
-call s:Set('CursorLine'        , '#990000'   , '#060606' , '160'  , '16'   , 'NONE')
-call s:Set('CursorLineNr'      , '#990808'   , s:jcg1    , '160'  , '16'   , 'NONE')
+call s:Set('CursorLine'        , '#990808'   , '#060606' , '160'  , '16'   , 'NONE')
+call s:Set('CursorLineNr'      , '#990808'   , '#060606' , '160'  , '16'   , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , s:jcg1    , '248'  , s:jct1 , 'NONE')
 call s:Set('Folded'            , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
@@ -97,13 +97,12 @@ call s:Link('helpSectionDelim' , 'helpVim')
 call s:Link('helpHeader'       , 'helpVim')
 
 " ------ Coustom ------
-call s:Set('VertSplit'   , '#C0C280'  , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('TabLine'     , '#666666'  , s:jcg1 , '251' , s:jct1 , 'underline')
-call s:Set('TabLineFill' , '#C0C280'  , s:jcg1 , '143' , s:jct1 , 'underline')
-call s:Set('TabLineSel'  , '#C0C280'  , '#010101' , '143' , '16'  , 'underline')
-call s:Set('StatusLine'  , '#C0C280'  , s:jcg1 , '143' , s:jct1 , 'underline')
-
-call s:Set('SpecialKey'  , '#121212'  , s:jcg1 , '233' , s:jct1 , 'NONE')
+call s:Set('VertSplit'   , '#101010' , s:jcg1    , '143' , '233'  , 'NONE')
+call s:Set('TabLine'     , '#585858' , '#1c1c1c' , '240' , '234'  , 'NONE')
+call s:Set('TabLineFill' , '#C0C280' , '#101010' , '143' , '233'  , 'NONE')
+call s:Set('TabLineSel'  , '#870000' , s:jcg1    , '88'  , s:jct1 , 'NONE')
+call s:Set('StatusLine'  , '#C0C280' , s:jcg1    , '143' , s:jct1 , 'NONE')
+call s:Set('SpecialKey'  , '#121212' , s:jcg1    , '233' , s:jct1 , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
