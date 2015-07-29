@@ -98,7 +98,7 @@ call s:Link('helpHeader'       , 'helpVim')
 
 " ------ Coustom ------
 call s:Set('VertSplit'    , '#101010' , s:jcg1    , '233' , s:jct1 , 'NONE')
-call s:Set('TabLine'      , '#303030' , '#121212' , '236' , '233'  , 'underline')
+call s:Set('TabLine'      , '#3a3a3a' , '#121212' , '237' , '233'  , 'underline')
 call s:Set('TabLineFill'  , '#101010' , s:jcg1    , '233' , s:jct1 , 'underline')
 call s:Set('TabLineSel'   , '#870000' , s:jcg1    , '88'  , s:jct1 , 'underline')
 call s:Set('StatusLine'   , '#C0C280' , s:jcg1    , '143' , s:jct1 , 'NONE')
