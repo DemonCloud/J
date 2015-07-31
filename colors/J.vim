@@ -196,7 +196,7 @@ call s:Link('cssTransitionProp'       , 'cssTagName')
 " JavaScript Syntax
 call s:Set('jsFunction'       , '#DB4300' , s:jcg1 , '202' , s:jct1 , 'NONE')
 call s:Set('jsFuncName'       , '#FF6600' , s:jcg1 , '208' , s:jct1 , 'NONE')
-call s:Set('jsFuncArgs'       , '#E70F0F' , s:jcg1 , '9'   , s:jct1 , 'underline')
+call s:Set('jsFuncArgs'       , '#E70F0F' , s:jcg1 , '9'   , s:jct1 , 'NONE')
 call s:Set('jsAssignExpIdent' , '#3A627B' , s:jcg1 , '24'  , s:jct1 , 'NONE')
 call s:Set('jsNumber'         , '#669CB6' , s:jcg1 , '68'  , s:jct1 , 'NONE')
 call s:Set('jsRegexpString'   , '#E21888' , s:jcg1 , '163' , s:jct1 , 'NONE')
@@ -283,8 +283,8 @@ call s:Link('shNumber'      , 'jsNumber')
 call s:Link('shOption'      , 'Function')
 
 " Python Support
-
 call s:Link('pythonImport','cInclude')
+call s:Link('pythonInclude','cInclude')
 call s:Link('pythonCoding','cDefine')
 call s:Link('pythonStatement','cType')
 call s:Link('pythonRepeat','cType')
@@ -292,6 +292,10 @@ call s:Link('pythonConditional','cType')
 call s:Link('pythonFunction','Function')
 call s:Link('pythonException','cType')
 call s:Link('pythonNumber','cNumber')
+call s:Link('pythonOperator','cType')
+call s:Link('pythonFunctionParams','jsFuncArgs')
+call s:Link('pythonEscape','jsGlobalObjects')
+
 "------ Vim Plugin Syntax ------
 
 " Tagbar Plugin
