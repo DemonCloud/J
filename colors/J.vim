@@ -76,6 +76,7 @@ call s:Set('MatchParen'        , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NO
 
 call s:Set('elixirDelimiter'   , '#778899'   , s:jcg1    , '67'   , s:jct1 , 'NONE')
 call s:Set('Search'            , s:jcg1      , '#990808' , s:jct1 , '196'  , 'NONE')
+call s:Set('IncSearch'         , s:jcg1      , '#990808' , s:jct1 , '196'  , 'NONE')
 call s:Set('Visual'            , '#C0C290'   , '#758888' , s:jct2 , '188'  , 'NONE')
 call s:Set('Nontext'           , '#990000'   , s:jcg1    , '124'  , s:jct1 , 'NONE')
 
@@ -95,6 +96,13 @@ call s:Set('helpSpecial'       , '#DB4301'   , s:jcg1    , '208'  , s:jct1 , 'NO
 call s:Set('helpHyperTextJump' , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'underline')
 call s:Set('helpNote'          , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
 call s:Set('helpVim'           , '#870000'   , s:jcg1    , '88'   , s:jct1 , 'NONE')
+
+call s:Link('DiffAdd','String');
+call s:Link('DiffChange','Title')
+call s:Link('DiffDelete','Search')
+
+call s:Link('StorageClass','Title')
+call s:Link('Structure','Function')
 
 call s:Link('helpSectionDelim' , 'helpVim')
 call s:Link('helpHeader'       , 'helpVim')
@@ -383,6 +391,5 @@ call s:Link('gitEmail'      , 'gitvRefHead')
 call s:Link('gitHash'       , 'gitvLocalUncommit')
 call s:Link('gitvHash'      , 'gitvLocalUncommit')
 call s:Link('gitvRefRemote' , 'gitvRefHead')
-
 
 hi clear SignColumn
