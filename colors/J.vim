@@ -97,7 +97,7 @@ call s:Set('helpHyperTextJump' , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'un
 call s:Set('helpNote'          , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
 call s:Set('helpVim'           , '#870000'   , s:jcg1    , '88'   , s:jct1 , 'NONE')
 
-call s:Link('DiffAdd','String');
+call s:Link('DiffAdd','String')
 call s:Link('DiffChange','Title')
 call s:Link('DiffDelete','Search')
 
