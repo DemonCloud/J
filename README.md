@@ -28,9 +28,15 @@
 
 >	11.tmux.conf
 
+>	12.Python
+
+>	13.Less
+
 ## Feature Support List
 
 >	<del><input type="checkbox" disabled checked>Less</del>
+
+>	<del><input type="checkbox" disabled checked>Python</del>
 
 >	<input type="checkbox" disabled>C++
 
