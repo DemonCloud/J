@@ -283,6 +283,7 @@ call s:Link('shNumber'      , 'jsNumber')
 call s:Link('shOption'      , 'Function')
 
 " Python Support
+" Suggest https://github.com/kh3phr3n/python-syntax
 call s:Link('pythonImport','cInclude')
 call s:Link('pythonInclude','cInclude')
 call s:Link('pythonCoding','cDefine')
@@ -296,6 +297,7 @@ call s:Link('pythonOperator','cType')
 call s:Link('pythonFunctionParams','jsFuncArgs')
 call s:Link('pythonFunctionParameters','jsFuncArgs')
 call s:Link('pythonEscape','jsGlobalObjects')
+call s:Link('pythonSelf','cCustomFunc')
 
 "------ Vim Plugin Syntax ------
 
