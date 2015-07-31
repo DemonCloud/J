@@ -52,15 +52,15 @@
 
 ### with Vundle 
 
-``Plugin 'DemonCloud/J.vim'``
+``Plugin 'DemonCloud/J'``
 
  Restart Vim and command call ``BundleInstall`` or ``PluginInstall``
 
 ### with Git 
 
-``git clone https://github.com/DemonCloud/J.vim.git``
+``git clone https://github.com/DemonCloud/J.git``
 
- Then copy the ``J.vim`` file into your Vim ``colors`` file directory
+ Then copy the ``colors/J.vim`` file into your Vim ``colors`` file directory
 
 ### last setup
  put this in your ``vimrc`` file
