@@ -12,7 +12,7 @@ if exists("syntax_on")
 	syntax reset
 endif
 
-set background="dark"
+set background=dark
 
 let g:colors_name="J"
 
@@ -33,8 +33,11 @@ function! s:Link(prop,linker)
 	exec lstr
 	endfunction
 
-let s:jcg1='#080808'
+" Main Color Style
+let s:jcg1='#080808' " Background
 let s:jct1='232'
+let s:jcg2='#C0C280' " Main Text Color
+let s:jct2='143'
 
 	" Vim Normal
 " Default Normal Global
@@ -48,7 +51,7 @@ call s:Set('CursorLineNr'      , '#990808'   , '#060606' , '160'  , '16'   , 'NO
 call s:Set('FoldColumn'        , 'DarkGray'  , s:jcg1    , '248'  , s:jct1 , 'NONE')
 call s:Set('Folded'            , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
 
-call s:Set('LineNr'            , '#C0C280'   , s:jcg1    , '143'  , s:jct1 , 'NONE')
+call s:Set('LineNr'            , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
 call s:Set('Statement'         , '#FFFFFF'   , s:jcg1    , '15'   , s:jct1 , 'bold')
 call s:Set('PreProc'           , '#FFFFFF'   , s:jcg1    , '15'   , s:jct1 , 'NONE')
 call s:Set('PreCondit'         , '#FFFFFF'   , s:jcg1    , '15'   , s:jct1 , 'bold')
@@ -64,7 +67,7 @@ call s:Set('WarningMsg'        , 'Red'       , '#FFFF87' , '9'    , '228'  , 'NO
 
 call s:Set('Keyword'           , '#DFAF87'   , s:jcg1    , '180'  , s:jct1 , 'underline')
 call s:Set('Constant'          , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
-call s:Set('Type'              , '#C0C290'   , s:jcg1    , '143'  , s:jct1 , 'NONE')
+call s:Set('Type'              , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
 call s:Set('Function'          , '#DB4301'   , s:jcg1    , '208'  , s:jct1 , 'NONE')
 
 call s:Set('Identifier'        , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
@@ -73,23 +76,23 @@ call s:Set('MatchParen'        , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NO
 
 call s:Set('elixirDelimiter'   , '#778899'   , s:jcg1    , '67'   , s:jct1 , 'NONE')
 call s:Set('Search'            , s:jcg1      , '#990808' , s:jct1 , '196'  , 'NONE')
-call s:Set('Visual'            , '#C0C290'   , '#758888' , '143'  , '188'  , 'NONE')
+call s:Set('Visual'            , '#C0C290'   , '#758888' , s:jct2 , '188'  , 'NONE')
 call s:Set('Nontext'           , '#990000'   , s:jcg1    , '124'  , s:jct1 , 'NONE')
 
 call s:Set('Directory'         , '#DB4301'   , s:jcg1    , '208'  , s:jct1 , 'NONE')
-call s:Set('Title'             , '#C0C290'   , s:jcg1    , '143'  , s:jct1 , 'bold')
-call s:Set('Todo'              , '#181818'   , '#C0C290' , s:jct1 , '143'  , 'bold')
+call s:Set('Title'             , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'bold')
+call s:Set('Todo'              , '#181818'   , '#C0C290' , s:jct1 , s:jct2 , 'bold')
 
-call s:Set('Pmenu'             , '#C0C280'   , '#000000' , '143'  , '16'   , 'NONE')
+call s:Set('Pmenu'             , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NONE')
 call s:Set('PmenuSel'          , '#000000'   , '#870000' , '16'   , '88'   , 'NONE')
-call s:Set('PmenuSbar'         , '#C0C280'   , '#000000' , '143'  , '16'   , 'NONE')
-call s:Set('PemnuThumb'        , '#C0C280'   , '#000000' , '143'  , '16'   , 'NONE')
+call s:Set('PmenuSbar'         , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NONE')
+call s:Set('PemnuThumb'        , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NONE')
 
-call s:Set('Tag'               , '#C0C280'   , s:jcg1    , '143'  , s:jct1 , 'NONE')
-call s:Set('Title'             , '#C0C280'   , s:jcg1    , '143'  , s:jct1 , 'underline')
+call s:Set('Tag'               , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
+call s:Set('Title'             , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'underline')
 
 call s:Set('helpSpecial'       , '#DB4301'   , s:jcg1    , '208'  , s:jct1 , 'NONE')
-call s:Set('helpHyperTextJump' , '#C0C290'   , s:jcg1    , '143'  , s:jct1 , 'underline')
+call s:Set('helpHyperTextJump' , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'underline')
 call s:Set('helpNote'          , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
 call s:Set('helpVim'           , '#870000'   , s:jcg1    , '88'   , s:jct1 , 'NONE')
 
@@ -97,48 +100,48 @@ call s:Link('helpSectionDelim' , 'helpVim')
 call s:Link('helpHeader'       , 'helpVim')
 
 " ------ Coustom ------
-call s:Set('VertSplit'    , '#101010' , s:jcg1    , '233' , s:jct1 , 'NONE')
-call s:Set('TabLine'      , '#3a3a3a' , '#121212' , '237' , '233'  , 'underline')
-call s:Set('TabLineFill'  , '#101010' , s:jcg1    , '233' , s:jct1 , 'underline')
-call s:Set('TabLineSel'   , '#870000' , s:jcg1    , '88'  , s:jct1 , 'underline')
-call s:Set('StatusLine'   , '#C0C280' , s:jcg1    , '143' , s:jct1 , 'NONE')
-call s:Set('StatusLineNC' , '#585858' , '#101010' , '240' , '143'  , 'NONE')
-call s:Set('SpecialKey'   , '#121212' , s:jcg1    , '233' , s:jct1 , 'NONE')
+call s:Set('VertSplit'          , '#101010' , s:jcg1    , '233'  , s:jct1 , 'NONE')
+call s:Set('TabLine'            , '#3a3a3a' , '#121212' , '237'  , '233'  , 'underline')
+call s:Set('TabLineFill'        , '#101010' , s:jcg1    , '233'  , s:jct1 , 'underline')
+call s:Set('TabLineSel'         , '#870000' , s:jcg1    , '88'   , s:jct1 , 'underline')
+call s:Set('StatusLine'         , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
+call s:Set('StatusLineNC'       , '#585858' , '#101010' , '240'  , s:jct2 , 'NONE')
+call s:Set('SpecialKey'         , '#121212' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
-call s:Set('vimOption'       , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('vimGroup'        , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('vimCommentTitle' , '#737373' , s:jcg1 , '243' , s:jct1 , 'NONE')
-call s:Set('vimCommand'      , 'Red'     , s:jcg1 , '196' , s:jct1 , 'NONE')
-call s:Set('vimIsCommand'    , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('vimMapLhs'       , '#D5523A' , s:jcg1 , '209' , s:jct1 , 'NONE')
-call s:Set('vimEnvvar'       , '#5F00D7' , s:jcg1 , '56'  , s:jct1 , 'NONE')
+call s:Set('vimOption'          , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
+call s:Set('vimGroup'           , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
+call s:Set('vimCommentTitle'    , '#737373' , s:jcg1    , '243'  , s:jct1 , 'NONE')
+call s:Set('vimCommand'         , 'Red'     , s:jcg1    , '196'  , s:jct1 , 'NONE')
+call s:Set('vimIsCommand'       , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
+call s:Set('vimMapLhs'          , '#D5523A' , s:jcg1    , '209'  , s:jct1 , 'NONE')
+call s:Set('vimEnvvar'          , '#5F00D7' , s:jcg1    , '56'   , s:jct1 , 'NONE')
 
-call s:Link('vimHiClear'     , 'vimHiGroup')
-call s:Link('vimHiGroup'     , 'vimHiGroup')
-call s:Link('vimHiAttrib'    , 'vimHiGroup')
-call s:Link('vimHiGui'       , 'vimHiGroup')
-call s:Link('vimHiGuiFgBg'   , 'vimHiGroup')
-call s:Link('vimHiCTerm'     , 'vimHiGroup')
-call s:Link('vimHiCTermFgBg' , 'vimHiGroup')
-call s:Link('vimSynType'     , 'vimHiGroup')
-call s:Link('vimNotation'    , 'vimMapLhs')
-call s:Link('vimAutoEvent'   , 'vimIsCommand')
-call s:Link('vimVar'         , 'vimIsCommand')
-call s:Link('vimUserFunc'    , 'vimCommand')
-call s:Link('vimFunction'    , 'Function')
-call s:Link('vimMapMod'      , 'vimIsCommand')
-call s:Link('vimMapModkey'   , 'vimIsCommand')
-call s:Link('vimFuncSID'     , 'Function')
+call s:Link('vimHiClear'         , 'vimHiGroup')
+call s:Link('vimHiGroup'         , 'vimHiGroup')
+call s:Link('vimHiAttrib'        , 'vimHiGroup')
+call s:Link('vimHiGui'           , 'vimHiGroup')
+call s:Link('vimHiGuiFgBg'       , 'vimHiGroup')
+call s:Link('vimHiCTerm'         , 'vimHiGroup')
+call s:Link('vimHiCTermFgBg'     , 'vimHiGroup')
+call s:Link('vimSynType'         , 'vimHiGroup')
+call s:Link('vimNotation'        , 'vimMapLhs')
+call s:Link('vimAutoEvent'       , 'vimIsCommand')
+call s:Link('vimVar'             , 'vimIsCommand')
+call s:Link('vimUserFunc'        , 'vimCommand')
+call s:Link('vimFunction'        , 'Function')
+call s:Link('vimMapMod'          , 'vimIsCommand')
+call s:Link('vimMapModkey'       , 'vimIsCommand')
+call s:Link('vimFuncSID'         , 'Function')
 
 " HTML Syntax
-call s:Set('htmlTag'         , '#DF642F' , s:jcg1 , '208' , s:jct1 , 'NONE')
-call s:Set('htmlArg'         , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('htmlTitle'       , '#870000' , s:jcg1 , '88'  , s:jct1 , 'bold')
-call s:Set('htmlH1'          , '#C2C280' , s:jcg1 , '143' , s:jct1 , 'bold')
-call s:Set('htmlLink'        , '#41A0AD' , s:jcg1 , '69'  , s:jct1 , 'underline')
-call s:Set('htmlSpecialChar' , '#114180' , s:jcg1 , '78'  , s:jct1 , 'NONE')
+call s:Set('htmlTag'             , '#DF642F'       , s:jcg1 , '208'  , s:jct1 , 'NONE')
+call s:Set('htmlArg'             , s:jcg2          , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
+call s:Set('htmlTitle'           , '#870000'       , s:jcg1 , '88'   , s:jct1 , 'bold')
+call s:Set('htmlH1'              , '#C2C280'       , s:jcg1 , s:jct2 , s:jct1 , 'bold')
+call s:Set('htmlLink'            , '#41A0AD'       , s:jcg1 , '69'   , s:jct1 , 'underline')
+call s:Set('htmlSpecialChar'     , '#114180'       , s:jcg1 , '78'   , s:jct1 , 'NONE')
 
 call s:Link('htmlEndTag'         , 'htmlTag')
 call s:Link('htmlTagN'           , 'htmlTag')
@@ -151,14 +154,14 @@ call s:Link('htmlH5'             , 'htmlH1')
 call s:Link('htmlH6'             , 'htmlH1')
 
 " CSS Syntax
-call s:Set('cssBraces'         , '#FFFFFF' , s:jcg1 , '15'  , s:jct1 , 'NONE')
-call s:Set('cssTagName'        , '#DB4300' , s:jcg1 , '202' , s:jct1 , 'underline')
-call s:Set('cssClassName'      , '#C1C298' , s:jcg1 , '229' , s:jct1 , 'NONE')
-call s:Set('cssIdentifier'     , '#DC1111' , s:jcg1 , '160' , s:jct1 , 'NONE')
-call s:Set('cssBoxProp'        , '#855EB8' , s:jcg1 , '62' , s:jct1 , 'NONE')
-call s:Set('cssIEUIProp'       , '#881828' , s:jcg1 , '88'  , s:jct1 , 'NONE')
-call s:Set('cssUnitDecorators' , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('cssError'          , '#990000' , s:jcg1 , '124' , s:jct1 , 'NONE')
+call s:Set('cssBraces'           , '#FFFFFF'       , s:jcg1 , '15'   , s:jct1 , 'NONE')
+call s:Set('cssTagName'          , '#DB4300'       , s:jcg1 , '202'  , s:jct1 , 'underline')
+call s:Set('cssClassName'        , '#C1C298'       , s:jcg1 , '229'  , s:jct1 , 'NONE')
+call s:Set('cssIdentifier'       , '#DC1111'       , s:jcg1 , '160'  , s:jct1 , 'NONE')
+call s:Set('cssBoxProp'          , '#855EB8'       , s:jcg1 , '62'   , s:jct1 , 'NONE')
+call s:Set('cssIEUIProp'         , '#881828'       , s:jcg1 , '88'   , s:jct1 , 'NONE')
+call s:Set('cssUnitDecorators'   , s:jcg2          , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
+call s:Set('cssError'            , '#990000'       , s:jcg1 , '124'  , s:jct1 , 'NONE')
 
 call s:Link('cssClassNameDot'         , 'cssClassName')
 call s:Link('cssPseudoClassId'        , 'cssIdentifier')
@@ -236,8 +239,8 @@ call s:Link('phpClass'         , 'Function')
 call s:Link('phpFunction'      , 'vimCommand')
 
 " JSON Syntax
-call s:Set('jsonKeyword'  , '#C0C290' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('jsonBrace'    , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
+call s:Set('jsonKeyword'  , s:jcg2 , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
+call s:Set('jsonBrace'    , s:jcg2 , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 
 " Less Syntax
 call s:Set('lessVariable' , '#000080' , s:jcg1 , '4'   , s:jct1 , 'NONE')
@@ -246,12 +249,12 @@ call s:Set('lessClass'    , '#008080' , s:jcg1 , '6'   , s:jct1 , 'NONE')
 call s:Link('lessMixinChar','lessClass')
 
 " C Syntax
-call s:Set('cInclude'       , '#980918'   , s:jcg1 , '88'  , s:jct1 , 'NONE')
-call s:Set('cIncluded'      , '#C2C290'   , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('cDefine'        , '#C91E58'   , s:jcg1 , '162' , s:jct1 , 'NONE')
-call s:Set('cNumber'        , '#668CB6'   , s:jcg1 , '68'  , s:jct1 , 'NONE')
-call s:Set('cType'          , '#C0C280'   , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('cCustomFunc'    , '#875F5F'   , s:jcg1 , '95'  , s:jct1 , 'NONE')
+call s:Set('cInclude'    , '#980918' , s:jcg1 , '88'   , s:jct1 , 'NONE')
+call s:Set('cIncluded'   , '#C2C290' , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
+call s:Set('cDefine'     , '#C91E58' , s:jcg1 , '162'  , s:jct1 , 'NONE')
+call s:Set('cNumber'     , '#668CB6' , s:jcg1 , '68'   , s:jct1 , 'NONE')
+call s:Set('cType'       , s:jcg2    , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
+call s:Set('cCustomFunc' , '#875F5F' , s:jcg1 , '95'   , s:jct1 , 'NONE')
 
 call s:Link('cRepeat'       , 'cInclude')
 call s:Link('cStructure'    , 'cInclude')
@@ -279,6 +282,16 @@ call s:Link('shDerefSimple' , 'jsGlobalObjects')
 call s:Link('shNumber'      , 'jsNumber')
 call s:Link('shOption'      , 'Function')
 
+" Python Support
+
+call s:Link('pythonImport','cInclude')
+call s:Link('pythonCoding','cDefine')
+call s:Link('pythonStatement','cType')
+call s:Link('pythonRepeat','cType')
+call s:Link('pythonConditional','cType')
+call s:Link('pythonFunction','Function')
+call s:Link('pythonException','cType')
+call s:Link('pythonNumber','cNumber')
 "------ Vim Plugin Syntax ------
 
 " Tagbar Plugin
@@ -293,12 +306,12 @@ call s:Link('TagbarHelpTitle' , 'Function')
 
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
-call s:Set('NerdTreeOpenable'  , '#870000' , s:jcg1 , '88'  , s:jct1 , 'NONE')
-call s:Set('NerdTreeCWD'       , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('NerdTreeDir'       , '#C0C280' , s:jcg1 , '143' , s:jct1 , 'NONE')
-call s:Set('NerdTreeFile'      , '#989898' , s:jcg1 , '247' , s:jct1 , 'NONE')
-call s:Set('NerdTreeHelpTitle' , '#990080' , s:jcg1 , '196' , s:jct1 , 'underline')
-call s:Set('NerdTreeExecFile'  , '#990080' , s:jcg1 , '196' , s:jct1 , 'NONE')
+call s:Set('NerdTreeOpenable'  , '#870000' , s:jcg1 , '88'   , s:jct1 , 'NONE')
+call s:Set('NerdTreeCWD'       , s:jcg2    , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
+call s:Set('NerdTreeDir'       , s:jcg2    , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
+call s:Set('NerdTreeFile'      , '#989898' , s:jcg1 , '247'  , s:jct1 , 'NONE')
+call s:Set('NerdTreeHelpTitle' , '#990080' , s:jcg1 , '196'  , s:jct1 , 'underline')
+call s:Set('NerdTreeExecFile'  , '#990080' , s:jcg1 , '196'  , s:jct1 , 'NONE')
 
 call s:Link('NerdTreeHelp'     , 'Comment')
 call s:Link('NerdTreeHelpKey'  , 'Function')
@@ -363,5 +376,6 @@ call s:Link('gitEmail'      , 'gitvRefHead')
 call s:Link('gitHash'       , 'gitvLocalUncommit')
 call s:Link('gitvHash'      , 'gitvLocalUncommit')
 call s:Link('gitvRefRemote' , 'gitvRefHead')
+
 
 hi clear SignColumn
