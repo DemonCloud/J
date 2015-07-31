@@ -294,6 +294,7 @@ call s:Link('pythonException','cType')
 call s:Link('pythonNumber','cNumber')
 call s:Link('pythonOperator','cType')
 call s:Link('pythonFunctionParams','jsFuncArgs')
+call s:Link('pythonFunctionParameters','jsFuncArgs')
 call s:Link('pythonEscape','jsGlobalObjects')
 
 "------ Vim Plugin Syntax ------
