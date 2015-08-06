@@ -354,6 +354,9 @@ call s:Link('uniteSource_DirectoryNew' , 'NerdTreeOpenable')
 call s:Link('uniteCandidateIcon'       , 'String')
 call s:Link('uniteSource_File'         , 'NerdTreeFile')
 
+call s:Set('uniteMarkedLine','green',s:jcg1,'22','s:jct1','NONE')
+call s:Link('uniteMarkedIcon','uniteMarkedLine')
+
 " MRU Plugin
 call s:Link('qfFileName'  , 'diffRemoved')
 call s:Link('MRUFileName' , 'diffRemoved')
