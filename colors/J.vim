@@ -49,7 +49,7 @@ call s:Set('CursorLine'        , '#990808'   , '#060606' , '160'  , '16'   , 'NO
 call s:Set('CursorLineNr'      , '#990808'   , '#060606' , '160'  , '16'   , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , s:jcg1    , '248'  , s:jct1 , 'NONE')
-call s:Set('Folded'            , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
+call s:Set('Folded'            , '#FFFFFF'   , '#870000' , '15'   , '88'   , 'NONE')
 
 call s:Set('LineNr'            , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
 call s:Set('Statement'         , '#FFFFFF'   , s:jcg1    , '15'   , s:jct1 , 'bold')
