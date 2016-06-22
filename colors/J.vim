@@ -114,7 +114,7 @@ call s:Set('TabLineFill'        , '#101010' , s:jcg1    , '233'  , s:jct1 , 'und
 call s:Set('TabLineExp'         , '#870000' , '#101010' , '88'   , '233' ,  'NONE')
 call s:Set('TabLineSel'         , '#870000' , s:jcg1    , '88'   , s:jct1 , 'underline')
 call s:Set('StatusLine'         , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
-call s:Set('StatusLineNC'       , '#585858' , '#101010' , '240'  , s:jct2 , 'NONE')
+call s:Set('StatusLineNC'       , '#101010' , s:jcg1    , '233'  , s:jct1 , 'underline')
 call s:Set('SpecialKey'         , '#121212' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 
 " ------ Language Syntax ------
