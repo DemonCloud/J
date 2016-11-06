@@ -4,6 +4,10 @@
 
 > Complete Best Support Gvim && 256 Term rendering
 
+<img src="http://7j1zwt.com1.z0.glb.clouddn.com/Screenshot%20from%202016-11-06%2016-18-25.png" alt="preview1"></img>
+
+<img src="http://7j1zwt.com1.z0.glb.clouddn.com/Screenshot%20from%202016-11-06%2016-17-45.png" alt="preview2"></img>
+
 ## Support Syntax List
 
 >	1.JavaScript
