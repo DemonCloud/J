@@ -1,7 +1,7 @@
 " Vim color scheme
 "
 " Name:       J.vim
-" Maintainer: YiJun
+" Author: YiJun
 " License:    MIT
 "
 " This Vim ColorScheme will rebuild in 2015 10 28
@@ -164,7 +164,7 @@ call s:Link('htmlH6'             , 'htmlH1')
 
 " CSS Syntax
 call s:Set('cssBraces'           , '#FFFFFF'       , s:jcg1 , '15'   , s:jct1 , 'NONE')
-call s:Set('cssTagName'          , '#DB4300'       , s:jcg1 , '202'  , s:jct1 , 'underline')
+call s:Set('cssTagName'          , '#DB4300'       , s:jcg1 , '202'  , s:jct1 , 'NONE')
 call s:Set('cssClassName'        , '#C1C298'       , s:jcg1 , '229'  , s:jct1 , 'NONE')
 call s:Set('cssIdentifier'       , '#DC1111'       , s:jcg1 , '160'  , s:jct1 , 'NONE')
 call s:Set('cssBoxProp'          , '#855EB8'       , s:jcg1 , '62'   , s:jct1 , 'NONE')
