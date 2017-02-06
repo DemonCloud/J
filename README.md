@@ -30,7 +30,7 @@
 
 >	10.Git
 
->	11.tmux.conf
+>	11.tmux
 
 >	12.Python
 
@@ -73,11 +73,14 @@
 
 
 ## Date
-Update  2015.7.24 --Update Shell Highlight Support
+Update  2017.2.6 -- Update JavaScript Highlight Support
 
-Update  2015.7.18 --More Update Highlight Support
+Update  2016.1.2 -- Add Python Highlight Support
 
-Update  2015.6.9 --Rebuilding J
+Update  2015.7.24 -- Update Shell Highlight Support
 
-Update  2015.6.2
+Update  2015.7.18 -- More Update Highlight Support
 
+Update  2015.6.9 -- Rebuilding J
+
+Update  2015.4.2 -- Create J
