@@ -4,9 +4,8 @@
 
 > Complete Best Support Gvim && 256 Term rendering
 
-<img src="http://7j1zwt.com1.z0.glb.clouddn.com/Screenshot%20from%202016-11-06%2016-18-25.png" alt="preview1"></img>
+<img src="http://7j1zwt.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-01-06%20%E4%B8%8B%E5%8D%882.56.19.png" alt="preview1"></img>
 
-<img src="http://7j1zwt.com1.z0.glb.clouddn.com/Screenshot%20from%202016-11-06%2016-17-45.png" alt="preview2"></img>
 
 ## Support Syntax List
 
