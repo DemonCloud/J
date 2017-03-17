@@ -90,10 +90,10 @@ call s:Set('PmenuSbar'         , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NO
 call s:Set('PemnuThumb'        , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NONE')
 
 call s:Set('Tag'               , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
-call s:Set('Title'             , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'underline')
+call s:Set('Title'             , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
 
 call s:Set('helpSpecial'       , '#DB4301'   , s:jcg1    , '208'  , s:jct1 , 'NONE')
-call s:Set('helpHyperTextJump' , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'underline')
+call s:Set('helpHyperTextJump' , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
 call s:Set('helpNote'          , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
 call s:Set('helpVim'           , '#870000'   , s:jcg1    , '88'   , s:jct1 , 'NONE')
 
@@ -149,7 +149,7 @@ call s:Set('htmlTag'             , '#DF642F'       , s:jcg1 , '208'  , s:jct1 , 
 call s:Set('htmlArg'             , s:jcg2          , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 call s:Set('htmlTitle'           , '#870000'       , s:jcg1 , '88'   , s:jct1 , 'bold')
 call s:Set('htmlH1'              , '#C2C280'       , s:jcg1 , s:jct2 , s:jct1 , 'bold')
-call s:Set('htmlLink'            , '#41A0AD'       , s:jcg1 , '69'   , s:jct1 , 'underline')
+call s:Set('htmlLink'            , '#41A0AD'       , s:jcg1 , '69'   , s:jct1 , 'NONE')
 call s:Set('htmlSpecialChar'     , '#114180'       , s:jcg1 , '78'   , s:jct1 , 'NONE')
 
 call s:Link('htmlEndTag'         , 'htmlTag')
@@ -215,7 +215,7 @@ call s:Set('jsOperator'       , '#FFFFFF' , s:jcg1 , '15'  , s:jct1 , 'NONE')
 
 call s:Link('jsClass'              , 'jsAssignExpIdent')
 call s:Link('jsImport'             , 'jsFunction')
-call s:Link('jsForm'               , 'jsFunction')
+call s:Link('jsFrom'               , 'jsFunction')
 call s:Link('jsAsyncKeyword'       , 'jsFunction')
 call s:Link('jsStorageClass'       , 'jsFunction')
 call s:Link('jsTry'                , 'jsFunction')
