@@ -1,8 +1,7 @@
-" Vim color scheme
-"
-" Name:       J.vim
+" Vim colors
+" Name: J
 " Author: YiJun
-" License:    MIT
+" License: MIT
 "
 " This Vim ColorScheme will rebuild in 2015 10 28
 
@@ -151,8 +150,10 @@ call s:Set('htmlTitle'           , '#870000'       , s:jcg1 , '88'   , s:jct1 , 
 call s:Set('htmlH1'              , '#C2C280'       , s:jcg1 , s:jct2 , s:jct1 , 'bold')
 call s:Set('htmlLink'            , '#41A0AD'       , s:jcg1 , '69'   , s:jct1 , 'NONE')
 call s:Set('htmlSpecialChar'     , '#114180'       , s:jcg1 , '78'   , s:jct1 , 'NONE')
-call s:link('xmlTagName'         , 'htmltag')
-call s:link('xmlEndTag'          , 'htmltag')
+
+call s:link('xmlTag'             , 'htmlTag')
+call s:link('xmlTagName'         , 'htmlTag')
+call s:link('xmlEndTag'          , 'htmlTag')
 call s:Link('htmlEndTag'         , 'htmlTag')
 call s:Link('htmlTagN'           , 'htmlTag')
 call s:Link('htmlTagName'        , 'htmlTag')
