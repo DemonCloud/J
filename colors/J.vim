@@ -151,9 +151,6 @@ call s:Set('htmlH1'              , '#C2C280'       , s:jcg1 , s:jct2 , s:jct1 , 
 call s:Set('htmlLink'            , '#41A0AD'       , s:jcg1 , '69'   , s:jct1 , 'NONE')
 call s:Set('htmlSpecialChar'     , '#114180'       , s:jcg1 , '78'   , s:jct1 , 'NONE')
 
-call s:link('xmlTag'             , 'htmlTag')
-call s:link('xmlTagName'         , 'htmlTag')
-call s:link('xmlEndTag'          , 'htmlTag')
 call s:Link('htmlEndTag'         , 'htmlTag')
 call s:Link('htmlTagN'           , 'htmlTag')
 call s:Link('htmlTagName'        , 'htmlTag')
@@ -163,6 +160,9 @@ call s:Link('htmlH3'             , 'htmlH1')
 call s:Link('htmlH4'             , 'htmlH1')
 call s:Link('htmlH5'             , 'htmlH1')
 call s:Link('htmlH6'             , 'htmlH1')
+" call s:link('xmlTag'             , 'htmlTag')
+" call s:link('xmlTagName'         , 'htmlTag')
+" call s:link('xmlEndTag'          , 'htmlTag')
 
 " CSS Syntax
 call s:Set('cssBraces'           , '#FFFFFF'       , s:jcg1 , '15'   , s:jct1 , 'NONE')
