@@ -160,9 +160,9 @@ call s:Link('htmlH3'             , 'htmlH1')
 call s:Link('htmlH4'             , 'htmlH1')
 call s:Link('htmlH5'             , 'htmlH1')
 call s:Link('htmlH6'             , 'htmlH1')
-call s:link('xmlTag'             , 'htmlTag')
-call s:link('xmlTagName'         , 'htmlTag')
-call s:link('xmlEndTag'          , 'htmlTag')
+call s:Link('xmlTag'             , 'htmlTag')
+call s:Link('xmlTagName'         , 'htmlTag')
+call s:Link('xmlEndTag'          , 'htmlTag')
 
 " CSS Syntax
 call s:Set('cssBraces'           , '#FFFFFF'       , s:jcg1 , '15'   , s:jct1 , 'NONE')
