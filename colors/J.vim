@@ -4,7 +4,6 @@
 " License: MIT
 "
 " This Vim ColorScheme will rebuild in 2015 10 28
-
 highlight clear
 
 if exists("syntax_on")
@@ -23,7 +22,10 @@ function! s:Set(prop,gfg,gbg,tfg,tbg,stl)
 		let hstr .=' gui=' . a:stl . ' cterm=' . a:stl . ' term=' . a:stl
 	endif
 
-	exec hstr
+	try
+		exec hstr
+	catch
+	endtry
 endfunction
 
 " link emplament Scheme
