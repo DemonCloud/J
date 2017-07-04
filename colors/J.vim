@@ -32,7 +32,7 @@ endfunction
 function! s:Link(prop,linker)
 	let lstr='hi link '. a:prop . ' ' . a:linker
 	exec lstr
-	endfunction
+endfunction
 
 " Main Color Style
 let s:jcg1='#080808' " Background
