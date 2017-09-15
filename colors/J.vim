@@ -219,6 +219,7 @@ call s:Set('jsOperator'       , '#FFFFFF' , s:jcg1 , '15'  , s:jct1 , 'NONE')
 call s:Set('jsVariableDef'    , '#005f87' , s:jcg1 , '24'  , s:jct1 , 'NONE')
 
 call s:Link('jsParenRepeat'        , 'jsVariableDef')
+call s:Link('jsDestructuringBlock' , 'jsVariableDef')
 call s:Link('jsClass'              , 'jsAssignExpIdent')
 call s:Link('jsImport'             , 'jsFunction')
 call s:Link('jsModuleAs'           , 'jsFunction')
