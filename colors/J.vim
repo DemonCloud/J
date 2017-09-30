@@ -183,6 +183,7 @@ call s:Link('cssUIProp'               , 'cssBoxProp')
 call s:Link('cssAuralProp'            , 'cssBoxProp')
 call s:Link('cssDefinition'           , 'cssBoxProp')
 call s:Link('cssFontProp'             , 'cssBoxProp')
+call s:Link('cssFontAttr'             , 'cssBoxProp')
 call s:Link('cssTextProp'             , 'cssBoxProp')
 call s:Link('cssListProp'             , 'cssBoxProp')
 call s:Link('cssColorProp'            , 'cssBoxProp')
@@ -202,6 +203,7 @@ call s:Link('cssFlexibleBoxProp'      , 'cssBoxProp')
 call s:Link('cssUIAttr'               , 'cssBoxProp')
 call s:Link('cssUnicodeEscape'        , 'Comment')
 call s:Link('cssHack'                 , 'Comment')
+call s:Link('cssValueLength'          , 'jsNumber')
 call s:Link('cssAnimationProp'        , 'cssTagName')
 call s:Link('cssTranformProp'         , 'cssTagName')
 call s:Link('cssTransitionProp'       , 'cssTagName')
@@ -273,9 +275,11 @@ call s:Set('jsonBrace'    , s:jcg2 , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 
 " Less Syntax
 call s:Set('lessVariable' , '#000080' , s:jcg1 , '4'   , s:jct1 , 'NONE')
-call s:Set('lessClass'    , '#008080' , s:jcg1 , '6'   , s:jct1 , 'NONE')
 
-call s:Link('lessMixinChar','lessClass')
+call s:Link('lessAmpersandChar', 'cssTagName')
+call s:Link('lessDefinition', 'cssBoxProp')
+call s:Link('lessMixinChar','cssTagName')
+call s:Link('lessClass', 'cssTagName')
 
 " C Syntax
 call s:Set('cInclude'    , '#980918' , s:jcg1 , '88'   , s:jct1 , 'NONE')
@@ -415,5 +419,15 @@ call s:Link('gitEmail'      , 'gitvRefHead')
 call s:Link('gitHash'       , 'gitvLocalUncommit')
 call s:Link('gitvHash'      , 'gitvLocalUncommit')
 call s:Link('gitvRefRemote' , 'gitvRefHead')
+
+" For Golang [vim-go]
+call s:Link('goPackage'     , 'jsFunction')
+call s:Link('goImport'      , 'jsFunction')
+call s:Link('goDeclaration' , 'jsFunction')
+call s:Link('goVar'         , 'jsFunction')
+call s:Link('goRepeat'      , 'jsFunction')
+call s:Link('goEscapeC'     , 'jsGlobalObjects')
+call s:Link('goBuiltins'    , 'jsGlobalObjects')
+call s:Link('goParen'       , 'jsParen')
 
 hi clear SignColumn
