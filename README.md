@@ -37,27 +37,33 @@
 
 ## Feature Support List
 
->	<del><input type="checkbox" disabled checked>Less</del>
+>	<del><input type="checkbox" disabled checked /> Less </del>
 
->	<del><input type="checkbox" disabled checked>Python</del>
+>	<del><input type="checkbox" disabled checked /> Python </del>
 
->	<input type="checkbox" disabled>C++
+>	<del><input type="checkbox" disabled checked /> TypeScript </del>
 
->	<input type="checkbox" disabled>Rust
+>	<del><input type="checkbox" disabled checked /> Go </del>
 
->	<input type="checkbox" disabled>Go
+>	<input type="checkbox" disabled> C++
 
->	<input type="checkbox" disabled>Lua
+>	<input type="checkbox" disabled> Rust
 
->	<input type="checkbox" disabled>JAVA
+>	<input type="checkbox" disabled> Lua
+
+>	<input type="checkbox" disabled> JAVA
+
+
 
 ## Install
 
-### with Vundle 
+### with Plug 
 
-``Plugin 'DemonCloud/J'``
+``Plug 'DemonCloud/J'``
 
- Restart Vim and command call ``BundleInstall`` or ``PluginInstall``
+ Restart Vim and command call ``PlugInstall``
+
+
 
 ### with Git 
 
@@ -65,13 +71,20 @@
 
  Then copy the ``colors/J.vim`` file into your Vim ``colors`` file directory
 
+
+
 ### last setup
+
  put this in your ``vimrc`` file
 
 ``colorscheme J``
 
 
+
 ## Date
+
+Update  2017.10.6 -- Update TypeScript & Go Highlight Support
+
 Update  2017.2.6 -- Update JavaScript Highlight Support
 
 Update  2016.1.2 -- Add Python Highlight Support
