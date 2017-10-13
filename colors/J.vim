@@ -268,6 +268,7 @@ call s:Link('typescriptGlobalObjects' , 'jsGlobalObjects')
 call s:Link('typescriptIdentifier'    , 'jsFunction')
 call s:Link('typescriptStatement'     , 'jsFunction')
 call s:Link('typescriptBranch'        , 'jsFunction')
+call s:Link('typescriptPrototype'     , 'jsGlobalObjects')
 call s:Link('typescriptExceptions'    , 'jsFunction')
 call s:Link('typescriptLabel'         , 'jsFuncName')
 
