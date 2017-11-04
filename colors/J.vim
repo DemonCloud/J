@@ -109,13 +109,13 @@ call s:Link('helpSectionDelim' , 'helpVim')
 call s:Link('helpHeader'       , 'helpVim')
 
 " ------ Coustom ------
-call s:Set('VertSplit'          , '#000000' , s:jcg1    , '233'  , s:jct1 , 'NONE')
+call s:Set('VertSplit'          , '#000000' , s:jcg1    , '233'  , s:jct1 , 'bold')
 call s:Set('TabLine'            , '#3a3a3a' , '#121212' , '237'  , '233'  , 'NONE')
 call s:Set('TabLineFill'        , '#000000' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 call s:Set('TabLineExp'         , '#870000' , '#101010' , '88'   , '233' ,  'NONE')
 call s:Set('TabLineSel'         , '#870000' , s:jcg1    , '88'   , s:jct1 , 'NONE')
-call s:Set('StatusLine'         , '#000000' , s:jcg1    , s:jct2 , s:jct1 , 'underline')
-call s:Set('StatusLineNC'       , '#000000' , s:jcg1    , '233'  , s:jct1 , 'underline')
+call s:Set('StatusLine'         , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
+call s:Set('StatusLineNC'       , s:jcg1    , s:jcg1    , '233'  , s:jct1 , 'NONE')
 call s:Set('SpecialKey'         , '#121212' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 
 " ------ Language Syntax ------
