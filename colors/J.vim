@@ -35,7 +35,7 @@ function! s:Link(prop,linker)
 endfunction
 
 " Main Color Style
-let s:jcg1='#080808' " Background
+let s:jcg1='#0f1419' " Background
 let s:jct1='232'
 let s:jcg2='#C0C280' " Main Text Color
 let s:jct2='143'
@@ -46,8 +46,8 @@ call s:Set('Normal'            , '#A8A8A8'   , s:jcg1    , '248'  , s:jct1 , 'NO
 
 " Cursor
 call s:Set('Cursor'            , s:jcg1      , '#870000' , s:jct1 , '88'   , 'NONE')
-call s:Set('CursorLine'        , '#990808'   , '#060606' , '160'  , '16'   , 'NONE')
-call s:Set('CursorLineNr'      , '#990808'   , '#060606' , '160'  , '16'   , 'NONE')
+call s:Set('CursorLine'        , '#990808'   , '#0f1419' , '160'  , '16'   , 'NONE')
+call s:Set('CursorLineNr'      , '#990808'   , '#0f1419' , '160'  , '16'   , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , s:jcg1    , '248'  , s:jct1 , 'NONE')
 call s:Set('Folded'            , '#FFFFFF'   , '#870000' , '15'   , '88'   , 'NONE')
@@ -85,10 +85,10 @@ call s:Set('Directory'         , '#DB4301'   , s:jcg1    , '208'  , s:jct1 , 'NO
 call s:Set('Title'             , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'bold')
 call s:Set('Todo'              , '#181818'   , '#C0C290' , s:jct1 , s:jct2 , 'bold')
 
-call s:Set('Pmenu'             , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NONE')
-call s:Set('PmenuSel'          , '#000000'   , '#870000' , '16'   , '88'   , 'NONE')
-call s:Set('PmenuSbar'         , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NONE')
-call s:Set('PemnuThumb'        , s:jcg2      , '#000000' , s:jct2 , '16'   , 'NONE')
+call s:Set('Pmenu'             , s:jcg2      , '#0f1419' , s:jct2 , '16'   , 'NONE')
+call s:Set('PmenuSel'          , '#0f1419'   , '#870000' , '16'   , '88'   , 'NONE')
+call s:Set('PmenuSbar'         , s:jcg2      , '#0f1419' , s:jct2 , '16'   , 'NONE')
+call s:Set('PemnuThumb'        , s:jcg2      , '#0f1419' , s:jct2 , '16'   , 'NONE')
 
 call s:Set('Tag'               , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
 call s:Set('Title'             , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
@@ -109,13 +109,13 @@ call s:Link('helpSectionDelim' , 'helpVim')
 call s:Link('helpHeader'       , 'helpVim')
 
 " ------ Coustom ------
-call s:Set('VertSplit'          , '#101010' , s:jcg1    , '233'  , s:jct1 , 'NONE')
+call s:Set('VertSplit'          , '#000000' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 call s:Set('TabLine'            , '#3a3a3a' , '#121212' , '237'  , '233'  , 'NONE')
-call s:Set('TabLineFill'        , '#101010' , s:jcg1    , '233'  , s:jct1 , 'NONE')
+call s:Set('TabLineFill'        , '#000000' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 call s:Set('TabLineExp'         , '#870000' , '#101010' , '88'   , '233' ,  'NONE')
 call s:Set('TabLineSel'         , '#870000' , s:jcg1    , '88'   , s:jct1 , 'NONE')
-call s:Set('StatusLine'         , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
-call s:Set('StatusLineNC'       , '#101010' , s:jcg1    , '233'  , s:jct1 , 'underline')
+call s:Set('StatusLine'         , '#000000' , s:jcg1    , s:jct2 , s:jct1 , 'underline')
+call s:Set('StatusLineNC'       , '#000000' , s:jcg1    , '233'  , s:jct1 , 'underline')
 call s:Set('SpecialKey'         , '#121212' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 
 " ------ Language Syntax ------
@@ -209,7 +209,7 @@ call s:Link('cssTranformProp'         , 'cssTagName')
 call s:Link('cssTransitionProp'       , 'cssTagName')
 
 " JavaScript Syntax
-call s:Set('jsFunction'       , '#DB4300' , s:jcg1 , '202' , s:jct1 , 'NONE')
+call s:Set('jsFunction'       , '#D14811' , s:jcg1 , '202' , s:jct1 , 'NONE')
 call s:Set('jsFuncName'       , '#FF6600' , s:jcg1 , '208' , s:jct1 , 'NONE')
 call s:Set('jsFuncArgs'       , '#E70F0F' , s:jcg1 , '9'   , s:jct1 , 'NONE')
 call s:Set('jsAssignExpIdent' , '#3A627B' , s:jcg1 , '24'  , s:jct1 , 'NONE')
@@ -254,7 +254,7 @@ call s:Link('jsGlobalNodeObjects'  , 'jsGlobalObjects')
 call s:Link('jsModuleKeyword'      , 'jsGlobalObjects')
 call s:Link('jsFuncAssignIdent'    , 'jsFuncName')
 call s:Link('jsBuiltins'           , 'jsFuncName')
-call s:Link('jsFunctionKey'        , 'jsObjectKey' )
+call s:Link('jsFunctionKey'        , 'jsFuncName')
 call s:Link('jsArguments'          , 'jsObjectKey' )
 call s:Link('jsRegexpQuantifier'   , 'jsAssignExpIdent')
 call s:Link('jsRegexpOr'           , 'jsAssignExpIdent')
@@ -361,7 +361,7 @@ call s:Link('TagbarHelpTitle' , 'Function')
 
 " NerdTree Plugin
 " https://github.com/scrooloose/nerdtree
-call s:Set('NerdTreeOpenable'  , '#870000' , s:jcg1 , '88'   , s:jct1 , 'NONE')
+call s:Set('NerdTreeClosable'  , '#870000' , s:jcg1 , '88'   , s:jct1 , 'NONE')
 call s:Set('NerdTreeCWD'       , s:jcg2    , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 call s:Set('NerdTreeDir'       , s:jcg2    , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 call s:Set('NerdTreeFile'      , '#989898' , s:jcg1 , '247'  , s:jct1 , 'NONE')
@@ -371,7 +371,7 @@ call s:Set('NerdTreeExecFile'  , '#990080' , s:jcg1 , '196'  , s:jct1 , 'NONE')
 call s:Link('NerdTreeHelp'     , 'Comment')
 call s:Link('NerdTreeHelpKey'  , 'Function')
 call s:Link('NerdTreeUp'       , 'NerdTreeDir')
-call s:Link('NerdTreeClosable' , 'NerdTreeDir')
+call s:Link('NerdTreeOpenable' , 'NerdTreeDir')
 call s:Link('NERDTreeRO'       , 'NerdTreeOpenable')
 
 " Gundo Plugin
