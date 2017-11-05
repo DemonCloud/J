@@ -458,4 +458,7 @@ call s:Link('goFloat'                 , 'jsNumber')
 call s:Link('goDecimalInt'            , 'jsNumber')
 call s:Link('goParen'                 , 'jsFuncArgs')
 
+call s:Link('FarSearchVal'            , 'jsFuncArgs')
+call s:Link('FarExcludedItem'         , 'Comment')
+
 hi clear SignColumn
