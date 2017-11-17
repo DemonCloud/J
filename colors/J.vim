@@ -288,6 +288,8 @@ call s:Link('phpFunction'      , 'vimCommand')
 call s:Set('jsonKeyword'  , s:jcg2 , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 call s:Set('jsonBrace'    , s:jcg2 , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 
+call s:Link('jsonBoolean' , 'jsFunction')
+
 " Less Syntax
 call s:Set('lessVariable' , '#000080' , s:jcg1 , '4'   , s:jct1 , 'NONE')
 
