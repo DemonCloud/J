@@ -464,4 +464,8 @@ call s:Link('goParen'                 , 'jsFuncArgs')
 call s:Link('FarSearchVal'            , 'jsFuncArgs')
 call s:Link('FarExcludedItem'         , 'Comment')
 
+" For [vim-gitgutter]
 hi clear SignColumn
+call s:Set('GitGutterAdd'    , '#009900' , s:jcg1 , '248' , s:jct1 , 'NONE')
+call s:Set('GitGutterChange' , '#bbbb00' , s:jcg1 , '248' , s:jct1 , 'NONE')
+call s:Set('GitGutterDelete' , '#ff2222' , s:jcg1 , '248' , s:jct1 , 'NONE')
