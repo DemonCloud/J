@@ -7,7 +7,7 @@
 highlight clear
 
 if exists("syntax_on")
-	syntax reset
+  syntax reset
 endif
 
 set background=dark
@@ -16,22 +16,22 @@ let g:colors_name="J"
 
 " set Highlight
 function! s:Set(prop,gfg,gbg,tfg,tbg,stl)
-	let hstr='hi ' . a:prop . ' guifg=' . a:gfg . ' guibg=' . a:gbg
-	if strlen(a:tfg)
-		let hstr .=' ctermfg=' . a:tfg . ' ctermbg=' . a:tbg
-		let hstr .=' gui=' . a:stl . ' cterm=' . a:stl . ' term=' . a:stl
-	endif
+  let hstr='hi ' . a:prop . ' guifg=' . a:gfg . ' guibg=' . a:gbg
+  if strlen(a:tfg)
+    let hstr .=' ctermfg=' . a:tfg . ' ctermbg=' . a:tbg
+    let hstr .=' gui=' . a:stl . ' cterm=' . a:stl . ' term=' . a:stl
+  endif
 
-	try
-		exec hstr
-	catch
-	endtry
+  try
+    exec hstr
+  catch
+  endtry
 endfunction
 
 " link emplament Scheme
 function! s:Link(prop,linker)
-	let lstr='hi link '. a:prop . ' ' . a:linker
-	exec lstr
+  let lstr='hi link '. a:prop . ' ' . a:linker
+  exec lstr
 endfunction
 
 " Main Color Style
@@ -40,7 +40,7 @@ let s:jct1='232'
 let s:jcg2='#C0C280' " Main Text Color
 let s:jct2='143'
 
-	" Vim Normal
+  " Vim Normal
 " Default Normal Global
 call s:Set('Normal'            , '#A8A8A8'   , s:jcg1    , '248'  , s:jct1 , 'NONE')
 
@@ -158,6 +158,7 @@ call s:Link('htmlEndTag'         , 'htmlTag')
 call s:Link('htmlTagN'           , 'htmlTag')
 call s:Link('htmlTagName'        , 'htmlTag')
 call s:Link('htmlSpecialTagName' , 'htmlTag')
+call s:Link('htmlTagError'       , 'htmlTag')
 call s:Link('htmlH2'             , 'htmlH1')
 call s:Link('htmlH3'             , 'htmlH1')
 call s:Link('htmlH4'             , 'htmlH1')
@@ -181,10 +182,11 @@ call s:Link('cssClassNameDot'         , 'cssClassName')
 call s:Link('cssPseudoClassId'        , 'cssIdentifier')
 call s:Link('cssImportant'            , 'cssTagName')
 call s:Link('cssUIProp'               , 'cssBoxProp')
+call s:Link('cssMediaProp'            , 'cssBoxProp')
 call s:Link('cssAuralProp'            , 'cssBoxProp')
 call s:Link('cssDefinition'           , 'cssBoxProp')
 call s:Link('cssFontProp'             , 'cssBoxProp')
-call s:Link('cssFontAttr'             , 'cssBoxProp')
+call s:Link('cssFontAttr'             , 'cssBraces')
 call s:Link('cssTextProp'             , 'cssBoxProp')
 call s:Link('cssListProp'             , 'cssBoxProp')
 call s:Link('cssColorProp'            , 'cssBoxProp')
@@ -201,13 +203,21 @@ call s:Link('cssDimensionProp'        , 'cssBoxProp')
 call s:Link('cssMultiColumnProp'      , 'cssBoxProp')
 call s:Link('cssGeneratedContentProp' , 'cssBoxProp')
 call s:Link('cssFlexibleBoxProp'      , 'cssBoxProp')
+call s:Link('cssKeyFrameProp'         , 'cssBoxProp')
 call s:Link('cssUIAttr'               , 'cssBoxProp')
 call s:Link('cssUnicodeEscape'        , 'Comment')
 call s:Link('cssHack'                 , 'Comment')
 call s:Link('cssValueLength'          , 'jsNumber')
+call s:Link('cssValueNumber'          , 'jsNumber')
+call s:Link('cssValueTime'            , 'jsNumber')
 call s:Link('cssAnimationProp'        , 'cssTagName')
 call s:Link('cssTranformProp'         , 'cssTagName')
 call s:Link('cssTransitionProp'       , 'cssTagName')
+call s:Link('cssAtRule'               , 'jsFunction')
+
+" Scss Syntax
+call s:Link('scssSelectorName', 'cssClassName')
+call s:Link('scssDefinition',   'jsFunction')
 
 " JavaScript Syntax
 call s:Set('jsFunction'       , '#D14811' , s:jcg1 , '202' , s:jct1 , 'NONE')
@@ -220,8 +230,10 @@ call s:Set('jsObjectKey'      , '#AF00FF' , s:jcg1 , '129' , s:jct1 , 'NONE')
 call s:Set('jsGlobalObjects'  , '#9E0090' , s:jcg1 , '201' , s:jct1 , 'NONE')
 call s:Set('jsOperator'       , '#FFFFFF' , s:jcg1 , '15'  , s:jct1 , 'NONE')
 call s:Set('jsVariableDef'    , '#005f87' , s:jcg1 , '24'  , s:jct1 , 'NONE')
+call s:Set('jsObjectShorthandProp', '#7F92A9' , s:jcg1 , '24', s:jct1, 'NONE')
 
 call s:Link('jsParenRepeat'        , 'jsVariableDef')
+call s:Link('jsParensError'        , 'jsParen')
 call s:Link('jsDestructuringBlock' , 'jsVariableDef')
 call s:Link('jsClass'              , 'jsAssignExpIdent')
 call s:Link('jsImport'             , 'jsFunction')
@@ -251,6 +263,7 @@ call s:Link('jsExceptions'         , 'jsFunction')
 call s:Link('jsArrowFunction'      , 'jsFunction')
 call s:Link('jsRegexpCharClass'    , 'String' )
 call s:Link('jsFuncAssignObjChain' , 'jsObjectKey')
+call s:Link('jsObjectProp'         , 'jsFuncName')
 call s:Link('jsGlobalNodeObjects'  , 'jsGlobalObjects')
 call s:Link('jsModuleKeyword'      , 'jsGlobalObjects')
 call s:Link('jsFuncAssignIdent'    , 'jsFuncName')
@@ -270,9 +283,12 @@ call s:Link('typescriptGlobalObjects' , 'jsGlobalObjects')
 call s:Link('typescriptIdentifier'    , 'jsFunction')
 call s:Link('typescriptStatement'     , 'jsFunction')
 call s:Link('typescriptBranch'        , 'jsFunction')
+call s:Link('typescriptStorageClass'  , 'jsStorageClass')
 call s:Link('typescriptPrototype'     , 'jsGlobalObjects')
 call s:Link('typescriptExceptions'    , 'jsFunction')
 call s:Link('typescriptLabel'         , 'jsFuncName')
+call s:Link('typescriptNumber'        , 'jsNumber')
+call s:Link('typescriptType'          , 'jsGlobalObjects')
 
 " PHP Syntax
 call s:Set('phpRegion'    , '#F8F8F8' , s:jcg1 , '253' , s:jct1 , 'NONE')
@@ -290,6 +306,7 @@ call s:Set('jsonKeyword'  , s:jcg2 , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 call s:Set('jsonBrace'    , s:jcg2 , s:jcg1 , s:jct2 , s:jct1 , 'NONE')
 
 call s:Link('jsonBoolean' , 'jsFunction')
+call s:Link('jsonNumber' , 'jsNumber')
 
 " Less Syntax
 call s:Set('lessVariable' , '#000080' , s:jcg1 , '4'   , s:jct1 , 'NONE')
@@ -469,3 +486,26 @@ hi clear SignColumn
 call s:Set('GitGutterAdd'    , '#009900' , s:jcg1 , '248' , s:jct1 , 'NONE')
 call s:Set('GitGutterChange' , '#bbbb00' , s:jcg1 , '248' , s:jct1 , 'NONE')
 call s:Set('GitGutterDelete' , '#ff2222' , s:jcg1 , '248' , s:jct1 , 'NONE')
+call s:Link('NERDTreeGitStatusDirDirty' , 'GitGutterAdd')
+
+" For [maxmellon/vim-jsx-pretty]
+call s:Link('jsxTagName' , 'htmlTag')
+call s:Link('jsxCloseTag' , 'htmlTag')
+call s:Link('jsxOpenPunct' , 'htmlTag')
+call s:Link('jsxClosePunct' , 'htmlTag')
+call s:Link('jsxComponentName', 'jsFunction')
+call s:Link('jsxCloseString', 'jsFunction')
+
+" For [ale]
+call s:Link('ALESignColumnWithErrors', 'Error')
+call s:Set('ALEErrorLine'   , '#990808'   , '#121212' , '160'  , '233'   , 'NONE')
+call s:Link('ALEErrorSign', 'Error')
+" call s:Link('ALEInfo', 'CursorLineNr')
+call s:Link('ALEVirtualTextStyleError'      , 'CursorLineNr')
+call s:Link('ALEVirtualTextError', 'CursorLineNr')
+call s:Link('ALEStyleError', 'ALEErrorLine')
+call s:Link('ALEErrorSignLineNr', 'CursorLineNr')
+call s:Link('MatchTag','CursorLineNr')
+
+" For coc.nvim
+call s:Set('CocCodeLens' , '#303030' , s:jcg1 , '236' , s:jct1 , 'NONE')

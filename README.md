@@ -4,9 +4,6 @@
 
 > Complete Best Support Gvim && 256 Term rendering
 
-<img src="http://7j1zwt.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-01-06%20%E4%B8%8B%E5%8D%882.56.19.png" alt="preview1"></img>
-
-
 ## Support Syntax List
 
 >	1.JavaScript
@@ -82,6 +79,8 @@
 
 
 ## Date
+
+Update  2019.9.8 -- Update Scss support
 
 Update  2017.10.6 -- Update TypeScript & Go Highlight Support
 
