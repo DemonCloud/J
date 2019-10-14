@@ -507,5 +507,11 @@ call s:Link('ALEStyleError', 'ALEErrorLine')
 call s:Link('ALEErrorSignLineNr', 'CursorLineNr')
 call s:Link('MatchTag','CursorLineNr')
 
-" For coc.nvim
+" For [coc.nvim]
 call s:Set('CocCodeLens' , '#303030' , s:jcg1 , '236' , s:jct1 , 'NONE')
+
+" For [bagrat/vim-buffet]
+call s:Link('BuffetTab' , 'TablineSel')
+call s:Link('BuffetTrunc', 'TablineExp')
+call s:Link('BuffetCurrentBuffer', 'TabLineExp')
+call s:Link('BuffetActiveBuffer', 'TabLine')
