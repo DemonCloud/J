@@ -286,6 +286,7 @@ call s:Link('typescriptArrayMethod', 'jsFunction')
 call s:Link('typescriptReserved'            , 'jsFunction')
 call s:Link('typescriptGlobal'              , 'jsGlobalObjects')
 call s:Link('typescriptCall'                , 'jsFuncArgs')
+call s:Link('typescriptParamImpl', 'jsFuncArgs')
 call s:Link('typescriptTypeReference'       , 'jsGlobalObjects')
 call s:Link('typescriptPreDefinedType'      , 'jsObjectKey')
 call s:Link('typescriptStatementKeyword'    , 'jsFunction')
@@ -535,3 +536,7 @@ call s:Link('BuffetTrunc', 'TablineExp')
 call s:Link('BuffetBuffer', 'TablineFill')
 call s:Link('BuffetCurrentBuffer', 'TabLineExp')
 call s:Link('BuffetActiveBuffer', 'TabLine')
+
+" For [RRethy/vim-illuminate]
+call s:Set('illuminatedWord', '#990808', '#1F2227' , '160'  , '233'  , 'NONE')
+
