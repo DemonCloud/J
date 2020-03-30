@@ -50,7 +50,7 @@ call s:Set('CursorLine'        , '#990808'   , '#0f1419' , '160'  , '16'   , 'NO
 call s:Set('CursorLineNr'      , '#990808'   , '#0f1419' , '160'  , '16'   , 'NONE')
 
 call s:Set('FoldColumn'        , 'DarkGray'  , s:jcg1    , '248'  , s:jct1 , 'NONE')
-call s:Set('Folded'            , '#FFFFFF'   , '#870000' , '15'   , '88'   , 'NONE')
+" call s:Set('Folded'            , '#FFFFFF'   , '#870000' , '15'   , '88'   , 'NONE')
 
 call s:Set('LineNr'            , s:jcg2      , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
 call s:Set('Statement'         , '#FFFFFF'   , s:jcg1    , '15'   , s:jct1 , 'bold')
@@ -86,7 +86,7 @@ call s:Set('Title'             , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'bo
 call s:Set('Todo'              , '#181818'   , '#C0C290' , s:jct1 , s:jct2 , 'bold')
 
 call s:Set('Pmenu'             , s:jcg2      , '#0f1419' , s:jct2 , '16'   , 'NONE')
-call s:Set('PmenuSel'          , '#0f1419'   , '#870000' , '16'   , '88'   , 'NONE')
+" call s:Set('PmenuSel'          , '#0f1419'   , '#870000' , '16'   , '88'   , 'NONE')
 call s:Set('PmenuSbar'         , s:jcg2      , '#0f1419' , s:jct2 , '16'   , 'NONE')
 call s:Set('PemnuThumb'        , s:jcg2      , '#0f1419' , s:jct2 , '16'   , 'NONE')
 
@@ -109,15 +109,15 @@ call s:Link('helpSectionDelim' , 'helpVim')
 call s:Link('helpHeader'       , 'helpVim')
 
 " ------ Coustom ------
-call s:Set('VertSplit'          , '#000000' , s:jcg1    , '233'  , s:jct1 , 'bold')
-call s:Set('TabLine'            , '#3a3a3a' , '#121212' , '237'  , '233'  , 'NONE')
-call s:Set('TabLineFill'        , '#000000' , s:jcg1    , '233'  , s:jct1 , 'NONE')
-call s:Set('TabLineExp'         , '#870000' , '#101010' , '88'   , '233'  , 'NONE')
-call s:Set('TabLineSel'         , '#870000' , s:jcg1    , '88'   , s:jct1 , 'NONE')
-call s:Set('TabLineRight'       , s:jcg1    , '#870000' , s:jct1 , '233'  , 'NONE')
-call s:Set('StatusLine'         , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
-call s:Set('StatusLineNC'       , s:jcg1    , s:jcg1    , '233'  , s:jct1 , 'NONE')
-call s:Set('SpecialKey'         , '#121212' , s:jcg1    , '233'  , s:jct1 , 'NONE')
+call s:Set('VertSplit'    , '#000000' , s:jcg1    , '233'  , s:jct1 , 'bold')
+call s:Set('TabLine'      , '#3a3a3a' , '#121212' , '237'  , '233'  , 'NONE')
+call s:Set('TabLineFill'  , '#000000' , s:jcg1    , '233'  , s:jct1 , 'NONE')
+call s:Set('TabLineExp'   , '#870000' , '#101010' , '88'   , '233'  , 'NONE')
+" call s:Set('TabLineSel'   , '#870000' , s:jcg1    , '88'   , s:jct1 , 'NONE')
+call s:Set('TabLineRight' , s:jcg1    , s:jcg1    , s:jct1 , s:jct1 , 'NONE')
+call s:Set('StatusLine'   , s:jcg2    , s:jcg1    , s:jct2 , s:jct1 , 'NONE')
+call s:Set('StatusLineNC' , s:jcg1    , s:jcg1    , '233'  , s:jct1 , 'NONE')
+call s:Set('SpecialKey'   , '#121212' , s:jcg1    , '233'  , s:jct1 , 'NONE')
 
 " ------ Language Syntax ------
 " Vim Syntax
@@ -540,3 +540,15 @@ call s:Link('BuffetActiveBuffer', 'TabLine')
 " For [RRethy/vim-illuminate]
 call s:Set('illuminatedWord', '#990808', '#1F2227' , '160'  , '233'  , 'NONE')
 
+" For [mg979/vim-xtabline]
+" hi! link XTSelect         PmenuSel
+" hi! link XTVisible        Special
+" hi! link XTHidden         TabLine
+" hi! link XTExtra          Visual
+" hi! link XTSpecial        IncSearch
+" hi! link XTFill           Folded
+" hi! link XTNumSel         TabLineSel
+" hi! link XTNum            TabLineSel
+call s:Set('Folded'     , '#181818' , s:jcg1    , s:jct1 , s:jct1 , 'NONE')
+call s:Set('PmenuSel'   , s:jcg1    , '#870000' , s:jct1 , '88'   , 'bold')
+call s:Set('TabLineSel' , s:jcg1    , s:jcg1    , s:jct1 , s:jct1 , 'NONE')
