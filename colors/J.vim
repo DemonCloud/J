@@ -98,10 +98,6 @@ call s:Set('helpHyperTextJump' , '#C0C290'   , s:jcg1    , s:jct2 , s:jct1 , 'NO
 call s:Set('helpNote'          , 'LightGray' , s:jcg1    , '252'  , s:jct1 , 'NONE')
 call s:Set('helpVim'           , '#870000'   , s:jcg1    , '88'   , s:jct1 , 'NONE')
 
-call s:Link('DiffAdd','String')
-call s:Link('DiffChange','Title')
-call s:Link('DiffDelete','Search')
-
 call s:Link('StorageClass','Title')
 call s:Link('Structure','Function')
 
@@ -507,6 +503,17 @@ call s:Set('GitGutterAdd'    , '#009900' , s:jcg1 , '248' , s:jct1 , 'NONE')
 call s:Set('GitGutterChange' , '#bbbb00' , s:jcg1 , '248' , s:jct1 , 'NONE')
 call s:Set('GitGutterDelete' , '#ff2222' , s:jcg1 , '248' , s:jct1 , 'NONE')
 call s:Link('NERDTreeGitStatusDirDirty' , 'GitGutterAdd')
+call s:Link('DiffAdd','GitGutterAdd')
+call s:Link('DiffChange','GitGutterChange')
+call s:Link('DiffDelete','GuiGutterDelete')
+call s:Link('SignifyLineAdd', 'GitGutterAdd')
+call s:Link('SignifyLineChange','GitGutterChange')
+call s:Link('SignifyLineDelete','GuiGutterDelete')
+call s:Link('SignifyLineDeleteFirstLine','GuiGutterDelete')
+call s:Link('SignifySignAdd', 'GitGutterAdd')
+call s:Link('SignifySignChange','GitGutterChange')
+call s:Link('SignifySignDelete','GuiGutterDelete')
+call s:Link('SignifySignDeleteFirstLine','GuiGutterDelete')
 
 " For [maxmellon/vim-jsx-pretty]
 call s:Link('jsxTagName' , 'htmlTag')
