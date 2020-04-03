@@ -559,3 +559,11 @@ call s:Set('illuminatedWord', '#990808', '#1F2227' , '160'  , '233'  , 'NONE')
 call s:Set('Folded'     , '#181818' , s:jcg1    , s:jct1 , s:jct1 , 'NONE')
 call s:Set('PmenuSel'   , s:jcg1    , '#870000' , s:jct1 , '88'   , 'bold')
 call s:Set('TabLineSel' , s:jcg1    , s:jcg1    , s:jct1 , s:jct1 , 'NONE')
+
+" For [chr4/nginx.vim]
+call s:Link('ngxDirectiveBlock' , 'jsFunction')
+call s:Link('ngxDirective'      , 'jsClass')
+call s:Link('ngxVariableBlock'  , 'jsFunction')
+call s:Link('ngxVariable'       , 'jsVariableDef')
+call s:Link('ngxInteger'        , 'jsNumber')
+
